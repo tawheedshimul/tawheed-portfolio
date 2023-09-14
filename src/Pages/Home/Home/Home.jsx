@@ -1,9 +1,14 @@
 import React from 'react'
+import Hero from '../Hero/Hero';
+import CarouselComponent from '../CarouselComponent/CarouselComponent';
 
 function Home() {
     return (
-        <div>Home</div>
+        <div>
+            <Hero></Hero>
+            <CarouselComponent></CarouselComponent>
+        </div>
     )
 }
 
-export default Home
+export default Home;

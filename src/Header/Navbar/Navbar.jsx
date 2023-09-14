@@ -28,14 +28,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-white p-4">
+    <nav className="bg-gray-200 text-gray-800 p-2">
       <div className="container mx-auto flex justify-between items-center">
-        <div className=" text-2xl font-bold">My Portfolio</div>
-        <div className="md:hidden">
-          <button onClick={toggleNavbar} className="text-white focus:outline-none">
-            {isOpen ? <FaTimes /> : <FaBars />}
-          </button>
-        </div>
+        <button class="bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold  py-1 rounded px-10 text-2xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105">
+          Tawheed
+        </button>
+
         <div className="hidden md:flex space-x-4">
           <a href="#" className="">
             Home
@@ -50,7 +48,16 @@ const Navbar = () => {
             Contact
           </a>
         </div>
+        <div className='flex '>
+          <div className='mr-2 mt-1'>Profile</div>
+          <div className="md:hidden">
+            <button onClick={toggleNavbar} className="text-white focus:outline-none mt-2">
+              {isOpen ? <FaTimes /> : <FaBars />}
+            </button>
+          </div>
+        </div>
       </div>
+
       {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
