@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -27,10 +27,17 @@ const Navbar = () => {
     },
   };
 
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="bg-gray-200 text-gray-800 p-2">
       <div className="container mx-auto flex justify-between items-center">
-        <button class="bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold  py-1 rounded px-10 text-2xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105">
+        <button
+          className="bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold py-1 rounded px-10 text-2xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105"
+          onClick={closeNavbar}
+        >
           Tawheed
         </button>
 
@@ -48,10 +55,10 @@ const Navbar = () => {
             Contact
           </a>
         </div>
-        <div className='flex '>
-          <div className='mr-2 mt-1'>Profile</div>
+        <div className="flex">
+          <div className="mr-2 mt-1">Profile</div>
           <div className="md:hidden">
-            <button onClick={toggleNavbar} className="text-white focus:outline-none mt-2">
+            <button onClick={toggleNavbar} className="text-cyan-400 focus:outline-none mt-2">
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
@@ -63,13 +70,14 @@ const Navbar = () => {
         {isOpen && (
           <>
             <motion.div
-              className="md:hidden fixed top-0 left-0 w-full h-full bg-black opacity-50"
+              className="fixed top-0 left-0 w-full h-full bg-black opacity-50"
               initial="hidden"
               animate="visible"
               exit="exit"
+              onClick={closeNavbar}
             ></motion.div>
             <motion.div
-              className="md:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg"
+              className="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-40"
               initial="hidden"
               animate="visible"
               exit="exit"
