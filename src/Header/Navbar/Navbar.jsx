@@ -35,30 +35,40 @@ const Navbar = () => {
     <nav className="bg-gray-200 text-gray-800 p-2">
       <div className="container mx-auto flex justify-between items-center">
         <button
-          className="bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold py-1 rounded px-10 text-2xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105"
+          className=" py-2 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold rounded px-10 text-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105"
           onClick={closeNavbar}
         >
           Tawheed
         </button>
 
-        <div className="hidden md:flex space-x-4">
-          <a href="#" className="">
+        <div class="hidden md:flex space-x-4">
+          <a href="#home" class="relative text-gray-600 hover:text-blue-500 transition-colors duration-300">
             Home
+            <div class="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 transition-transform duration-300 origin-left"></div>
           </a>
-          <a href="#" className="">
+          <a href="#about" class="relative text-gray-600 hover:text-blue-500 transition-colors duration-300">
             About
+            <div class="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 transition-transform duration-300 origin-left"></div>
           </a>
-          <a href="#" className="">
+          <a href="#projects" class="relative text-gray-600 hover:text-blue-500 transition-colors duration-300">
             Projects
+            <div class="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 transition-transform duration-300 origin-left"></div>
           </a>
-          <a href="#" className="">
+          <a href="#contact" class="relative text-gray-600 hover:text-blue-500 transition-colors duration-300">
             Contact
+            <div class="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 transition-transform duration-300 origin-left"></div>
           </a>
         </div>
+
+
+
+
+
+
         <div className="flex">
           <div className="mr-2 mt-1">Profile</div>
           <div className="md:hidden">
-            <button onClick={toggleNavbar} className="text-cyan-400 focus:outline-none mt-2">
+            <button onClick={toggleNavbar} className="text-gray-100 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 rounded p-2 text-xl focus:outline-none">
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
