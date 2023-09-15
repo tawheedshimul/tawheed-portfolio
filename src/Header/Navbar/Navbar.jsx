@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const menuVariants = {
     hidden: {
-      x: '-100%',
+      x: '100%', // Change this to '100%' to hide the menu on the right side initially
     },
     visible: {
       x: 0,
@@ -20,12 +20,13 @@ const Navbar = () => {
       },
     },
     exit: {
-      x: '-100%',
+      x: '100%', // Change this to '100%' to slide the menu out to the right
       transition: {
         duration: 0.3,
       },
     },
   };
+
 
   const closeNavbar = () => {
     setIsOpen(false);
@@ -87,7 +88,7 @@ const Navbar = () => {
               onClick={closeNavbar}
             ></motion.div>
             <motion.div
-              className="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-40"
+              className="fixed top-0 right-0 w-5/6 h-full bg-gray-200 shadow-lg z-40"
               initial="hidden"
               animate="visible"
               exit="exit"
@@ -98,19 +99,20 @@ const Navbar = () => {
                   <FaTimes className="text-2xl" />
                 </button>
               </div>
-              <div className="py-4">
-                <a href="#" className="block text-gray-600 p-2">
-                  Home
+              <div className="py-4 space-y-2">
+                <a href="#" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
+                  <span className='mx-2'>Home</span>
                 </a>
-                <a href="#" className="block text-gray-600 p-2">
-                  About
+                <a href="#" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
+                  <span className='mx-2'>About</span>
                 </a>
-                <a href="#" className="block text-gray-600 p-2">
-                  Projects
+                <a href="#" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
+                  <span className='mx-2'>Project</span>
                 </a>
-                <a href="#" className="block text-gray-600 p-2">
-                  Contact
+                <a href="#" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
+                  <span className='mx-2'>Contact</span>
                 </a>
+
               </div>
             </motion.div>
           </>
