@@ -1,13 +1,14 @@
 import React from "react";
+import TypewriterEffect from "../TypewriterEffect/TypewriterEffect";
 
-const Hero2 = () => {
+const Hero = () => {
     return (
         <div className="dark:bg-gray-900">
             <div className="container mx-auto py-14">
                 <div className="flex flex-col lg:flex-row justify-center items-strech mx-4">
                     <div className="lg:w-4/12 flex justify-center items-center">
                         <div>
-                            <h1 className="dark:text-white text-4xl md:text-5xl xl:text-6xl font-semibold text-gray-900 w-7/12">Hey...</h1>
+                            <h1 className="dark:text-white text-4xl md:text-5xl xl:text-6xl h-8 w-full font-semibold text-gray-900 w-7/12"><TypewriterEffect></TypewriterEffect></h1>
                             <p className="dark:text-gray-300 md:w-7/12 lg:w-11/12 xl:w-10/12 mt-4 lg:mt-5 text-base leading-normal text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
                         </div>
                     </div>
@@ -54,4 +55,4 @@ const Hero2 = () => {
     );
 };
 
-export default Hero2;
+export default Hero;
