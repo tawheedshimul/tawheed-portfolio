@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -100,18 +101,18 @@ const Navbar = () => {
                 </button>
               </div>
               <div className="py-4 space-y-2">
-                <a href="#" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
+                <Link to="/home" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
                   <span className='mx-2'>Home</span>
-                </a>
-                <a href="#" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
+                </Link>
+                <Link to="/about" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
                   <span className='mx-2'>About</span>
-                </a>
-                <a href="#" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
+                </Link>
+                <Link to="/projects" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
                   <span className='mx-2'>Project</span>
-                </a>
-                <a href="#" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
+                </Link>
+                <Link to="/contact" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
                   <span className='mx-2'>Contact</span>
-                </a>
+                </Link>
 
               </div>
             </motion.div>

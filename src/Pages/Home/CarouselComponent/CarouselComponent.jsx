@@ -1,5 +1,4 @@
 import React from 'react';
-import 'tailwindcss/tailwind.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
@@ -22,19 +21,20 @@ const AdvancedCarousel = () => {
         autoPlay={true}
         interval={4000}
         transitionTime={1000}
-        emulateTouch={true}
-        selectedItem={0}
         useKeyboardArrows={true}
-        centerMode={false} // Disable center mode for responsive display
-        dynamicHeight={false} // Disable dynamic height for responsive display
-        swipeScrollTolerance={50} // Adjust scroll tolerance for small screens
-        renderIndicator={() => null} // Hide the indicator dots
+        centerMode={false}
+        dynamicHeight={false}
+        swipeScrollTolerance={10} // Decreased scroll tolerance
+        renderIndicator={() => null}
       >
         {imageUrls.map((imageUrl, index) => (
           <div
             key={index}
             className="bg-cover container mx-auto bg-center h-96 relative"
-            style={{ backgroundImage: `url(${imageUrl}?fit=crop&w=1920&h=1080)` }}
+            style={{
+              backgroundImage: `url(${imageUrl}?fit=crop&w=1920&h=1080)`,
+              touchAction: 'pan-y', // Enable vertical touch scrolling
+            }}
           >
             <div className="absolute inset-0 bg-black opacity-50 hover:opacity-75 transition-opacity duration-300"></div>
             <div className="absolute inset-0 flex mt-32 flex-col justify-center items-center p-4 text-white">
@@ -49,3 +49,5 @@ const AdvancedCarousel = () => {
 };
 
 export default AdvancedCarousel;
+
+
