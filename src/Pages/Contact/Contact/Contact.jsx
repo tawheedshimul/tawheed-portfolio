@@ -138,13 +138,14 @@ const Contact = () => {
                             <div className="rounded-lg overflow-hidden">
                                 {/* Placeholder for Google Maps */}
                                 <iframe
-                                    title="My Location"
+                                    className="gmap_iframe"
                                     width="100%"
-                                    height="300"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-122.084249!3d37.422186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbbc1f65e14af%3A0xf9df6a42e6cbf160!2sYour%20Location!5e0!3m2!1sen!2sus!4v1631512345678!5m2!1sen!2sus"
-                                    frameBorder="0"
-                                    allowFullScreen=""
-                                    loading="lazy"
+                                    height='300px'
+                                    frameborder="0"
+                                    scrolling="no"
+                                    marginheight="0"
+                                    marginwidth="0"
+                                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Kushtia&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                                 ></iframe>
                             </div>
                         </div>
