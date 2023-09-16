@@ -19,22 +19,22 @@ const Contact = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <div className="card-header px-4 rounded-t py-3 dark:bg-gray-700">
+                        <div className="card-header px-4 rounded-t py-3 bg-gray-200 dark:bg-gray-700">
                             <h2 className="text-xl font-semibold">Contact Information</h2>
                         </div>
                         <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
                             <ul className="flex flex-col space-y-2">
                                 <li className="flex items-center">
                                     <FaEnvelope className="text-gray-600 dark:text-gray-100 mr-2" />
-                                    <span className="text-gray-700 dark:text-gray-200">Email: your.email@example.com</span>
+                                    <span className="text-gray-700 dark:text-gray-200">Email: tawheedshimul@gmail.com</span>
                                 </li>
                                 <li className="flex items-center">
-                                    <FaPhone className="text-gray-600 mr-2" />
-                                    <span className="text-gray-700">Phone: (123) 456-7890</span>
+                                    <FaPhone className="text-gray-600 dark:text-gray-100 mr-2" />
+                                    <span className="text-gray-700 dark:text-gray-200">Phone: (+88) 01811-861331</span>
                                 </li>
                                 <li className="flex items-center">
-                                    <FaMapMarker className="text-gray-600 mr-2" />
-                                    <span className="text-gray-700">Location: Your City, Country</span>
+                                    <FaMapMarker className="text-gray-600 dark:text-gray-100 mr-2" />
+                                    <span className="text-gray-700 dark:text-gray-200">Location: Kushtia, Bangladesh</span>
                                 </li>
                             </ul>
                         </div>
@@ -45,13 +45,13 @@ const Contact = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <div className="card-header px-4 rounded-t py-3 dark:bg-gray-700">
+                        <div className="card-header px-4 rounded-t py-3 bg-gray-200 dark:bg-gray-700">
                             <h2 className="text-xl font-semibold">Contact Form</h2>
                         </div>
-                        <div className="card-body rounded-b px-4 py-3">
+                        <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
                             <form>
                                 <div className="mb-4">
-                                    <label className="block text-gray-600 font-semibold mb-2" htmlFor="name">
+                                    <label className="block text-gray-600 dark:bg-gray-100 font-semibold mb-2" htmlFor="name">
                                         Your Name
                                     </label>
                                     <input
@@ -64,7 +64,7 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="mb-4">
-                                    <label className="block text-gray-600 font-semibold mb-2" htmlFor="email">
+                                    <label className="block text-gray-600 dark:bg-gray-100 font-semibold mb-2" htmlFor="email">
                                         Your Email
                                     </label>
                                     <input
@@ -77,7 +77,7 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="mb-4">
-                                    <label className="block text-gray-600 font-semibold mb-2" htmlFor="message">
+                                    <label className="block text-gray-600 dark:bg-gray-100 font-semibold mb-2" htmlFor="message">
                                         Message
                                     </label>
                                     <textarea
@@ -90,7 +90,7 @@ const Contact = () => {
                                 </div>
                                 <div className="text-center">
                                     <button
-                                        className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+                                        className="bg-gray-500 dark:bg-gray-100 dark:text-gray-800 text-white  py-2 px-4 rounded hover:bg-gray-600 transition duration-300"
                                         type="submit"
                                     >
                                         Send Message
