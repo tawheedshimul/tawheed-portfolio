@@ -1,11 +1,13 @@
 import React from 'react';
 import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import BacktoTop from '../BacktoTop/BacktoTop';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
 
   return (
     <footer className="bg-gray-200 dark:bg-black py-4">
+      <BacktoTop></BacktoTop>
       <div className="container mx-auto flex justify-center items-center">
         <div className="mr-6">
           <a
