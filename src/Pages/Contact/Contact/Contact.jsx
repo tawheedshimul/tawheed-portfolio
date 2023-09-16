@@ -1,123 +1,138 @@
-// src/components/Contact.js
 import React from "react";
 import { FaEnvelope, FaPhone, FaMapMarker, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Contact = () => {
+    const cardVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    };
+
     return (
         <div className="min-h-screen flex flex-col justify-center items-center container mx-auto bg-gray-100">
-            <div className="bg-white dark:bg-black dark:text-red-500 p-8 rounded shadow-lg w-fill">
-                <div>
-                    <h1 className="text-3xl font-semibold mb-4">Contact Me</h1>
-                    <div className="mb-4">
-                        <h2 className="text-xl font-semibold mb-2">Contact Information</h2>
-                        <div className="flex items-center mb-2">
-                            <FaEnvelope className="text-gray-600 mr-2" />
-                            <span>Email: your.email@example.com</span>
+            <div className="bg-white dark:bg-black dark:text-white p-8 rounded shadow-lg w-fill">
+                <h1 className="text-3xl font-semibold mb-4">Contact Me</h1>
+
+                <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <motion.div className="card rounded shadow-lg"
+                        variants={cardVariants}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        <div className="card-header px-4 rounded-t py-3 bg-gray-200">
+                            <h2 className="text-xl font-semibold">Contact Information</h2>
                         </div>
-                        <div className="flex items-center mb-2">
-                            <FaPhone className="text-gray-600 mr-2" />
-                            <span>Phone: (123) 456-7890</span>
+                        <div className="card-body rounded-b px-4 py-3">
+                            <ul className="flex flex-col space-y-2">
+                                <li className="flex items-center">
+                                    <FaEnvelope className="text-gray-600 mr-2" />
+                                    <span className="text-gray-700">Email: your.email@example.com</span>
+                                </li>
+                                <li className="flex items-center">
+                                    <FaPhone className="text-gray-600 mr-2" />
+                                    <span className="text-gray-700">Phone: (123) 456-7890</span>
+                                </li>
+                                <li className="flex items-center">
+                                    <FaMapMarker className="text-gray-600 mr-2" />
+                                    <span className="text-gray-700">Location: Your City, Country</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div className="flex items-center">
-                            <FaMapMarker className="text-gray-600 mr-2" />
-                            <span>Location: Your City, Country</span>
+                    </motion.div>
+
+                    <motion.div className="card rounded shadow-lg"
+                        variants={cardVariants}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        <div className="card-header px-4 rounded-t py-3 bg-gray-200">
+                            <h2 className="text-xl font-semibold">Contact Form</h2>
                         </div>
-                    </div>
-                    <div>
-                        <h2 className="text-xl font-semibold mb-2">Contact Form</h2>
-                        <p className="mb-4">
-                            Feel free to send me a message using the contact form below. I'll get back to you as soon as possible.
-                        </p>
-                        <form>
-                            <div className="mb-4">
-                                <label className="block text-gray-600 font-semibold mb-2" htmlFor="name">
-                                    Your Name
-                                </label>
-                                <input
-                                    className="border border-gray-300 rounded w-full py-2 px-3"
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    placeholder="John Doe"
-                                    required
-                                />
-                            </div>
-                            <div className="mb-4">
-                                <label className="block text-gray-600 font-semibold mb-2" htmlFor="email">
-                                    Your Email
-                                </label>
-                                <input
-                                    className="border border-gray-300 rounded w-full py-2 px-3"
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="youremail@example.com"
-                                    required
-                                />
-                            </div>
-                            <div className="mb-4">
-                                <label className="block text-gray-600 font-semibold mb-2" htmlFor="message">
-                                    Message
-                                </label>
-                                <textarea
-                                    className="border border-gray-300 rounded w-full py-2 px-3 h-32 resize-none"
-                                    id="message"
-                                    name="message"
-                                    placeholder="Type your message here..."
-                                    required
-                                />
-                            </div>
-                            <div className="text-center">
-                                <button
-                                    className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
-                                    type="submit"
-                                >
-                                    Send Message
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div>
-                    <div className="mt-8">
+                        <div className="card-body rounded-b px-4 py-3">
+                            <form>
+                                <div className="mb-4">
+                                    <label className="block text-gray-600 font-semibold mb-2" htmlFor="name">
+                                        Your Name
+                                    </label>
+                                    <input
+                                        className="border border-gray-300 rounded w-full py-2 px-3"
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="John Doe"
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-gray-600 font-semibold mb-2" htmlFor="email">
+                                        Your Email
+                                    </label>
+                                    <input
+                                        className="border border-gray-300 rounded w-full py-2 px-3"
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="youremail@example.com"
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="block text-gray-600 font-semibold mb-2" htmlFor="message">
+                                        Message
+                                    </label>
+                                    <textarea
+                                        className="border border-gray-300 rounded w-full py-2 px-3 h-32 resize-none"
+                                        id="message"
+                                        name="message"
+                                        placeholder="Type your message here..."
+                                        required
+                                    />
+                                </div>
+                                <div className="text-center">
+                                    <button
+                                        className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+                                        type="submit"
+                                    >
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </motion.div>
+                </motion.div>
+
+                <div className="mt-8">
+                    <motion.div className="card rounded shadow-lg"
+                        variants={cardVariants}
+                        initial="hidden"
+                        animate="visible"
+                    >
                         <h2 className="text-xl font-semibold mb-2">Connect with Me</h2>
-                        <p className="mb-4">
-                            Let's connect on social media to stay updated with my latest work and projects.
-                        </p>
+                        <p className="mb-4">Let's connect on social media to stay updated with my latest work and projects.</p>
                         <div className="flex space-x-4">
-                            <a
-                                href="https://linkedin.com/yourprofile"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-600 hover:underline"
-                            >
+                            <a href="https://linkedin.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                                 <FaLinkedin className="text-xl" /> LinkedIn
                             </a>
-                            <a
-                                href="https://twitter.com/yourprofile"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-400 hover:underline"
-                            >
+                            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
                                 <FaTwitter className="text-xl" /> Twitter
                             </a>
-                            <a
-                                href="https://github.com/yourprofile"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-800 hover:underline"
-                            >
+                            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:underline">
                                 <FaGithub className="text-xl" /> GitHub
                             </a>
                         </div>
-                    </div>
-                    <div className="mt-8">
+                    </motion.div>
+                </div>
+
+                <div className="mt-8">
+                    <motion.div className="card rounded shadow-lg"
+                        variants={cardVariants}
+                        initial="hidden"
+                        animate="visible"
+                    >
                         <h2 className="text-xl font-semibold mb-2">My Location</h2>
-                        <p className="mb-4">
-                            You can find me here. Feel free to reach out or stop by for a coffee.
-                        </p>
+                        <p className="mb-4">You can find me here. Feel free to reach out or stop by for a coffee.</p>
                         <div className="rounded-lg overflow-hidden">
-                            {/* Add an iframe with Google Maps or other map service here */}
+                            {/* Placeholder for Google Maps */}
                             <iframe
                                 title="My Location"
                                 width="100%"
@@ -128,7 +143,7 @@ const Contact = () => {
                                 loading="lazy"
                             ></iframe>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
