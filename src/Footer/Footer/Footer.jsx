@@ -14,7 +14,7 @@ const Footer = () => {
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-blue-600 transition duration-300"
+            className="text-gray-800 dark:text-white hover:text-blue-600 transition duration-300"
           >
             <FaFacebookSquare size={32} />
           </a>
@@ -24,7 +24,7 @@ const Footer = () => {
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-cyan-500 transition duration-300"
+            className="text-gray-800 dark:text-white hover:text-cyan-500 transition duration-300"
           >
             <FaTwitterSquare size={32} />
           </a>
@@ -34,7 +34,7 @@ const Footer = () => {
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-green-800 transition duration-300"
+            className="text-gray-800 dark:text-white hover:text-green-800 transition duration-300"
           >
             <FaLinkedin size={32} />
           </a>
@@ -44,7 +44,7 @@ const Footer = () => {
             href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-gray-500 transition duration-300"
+            className="text-gray-800 dark:text-white hover:text-gray-500 transition duration-300"
           >
             <FaGithubSquare size={32} />
           </a>
