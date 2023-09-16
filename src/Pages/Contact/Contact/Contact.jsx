@@ -9,7 +9,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center container mx-auto bg-gray-100">
+        <div className="min-h-screen flex flex-col justify-center items-center mx-auto bg-gray-100">
             <div className="bg-white dark:bg-black dark:text-white p-8 rounded shadow-lg w-fill">
                 <h1 className="text-3xl font-semibold mb-4">Contact Me</h1>
 
@@ -51,7 +51,7 @@ const Contact = () => {
                         <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
                             <form>
                                 <div className="mb-4">
-                                    <label className="block text-gray-600 dark:bg-gray-100 font-semibold mb-2" htmlFor="name">
+                                    <label className="block text-gray-600 dark:text-gray-100 font-semibold mb-2" htmlFor="name">
                                         Your Name
                                     </label>
                                     <input
@@ -64,7 +64,7 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="mb-4">
-                                    <label className="block text-gray-600 dark:bg-gray-100 font-semibold mb-2" htmlFor="email">
+                                    <label className="block text-gray-600 dark:text-gray-100 font-semibold mb-2" htmlFor="email">
                                         Your Email
                                     </label>
                                     <input
@@ -77,7 +77,7 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="mb-4">
-                                    <label className="block text-gray-600 dark:bg-gray-100 font-semibold mb-2" htmlFor="message">
+                                    <label className="block text-gray-600 dark:text-gray-100 font-semibold mb-2" htmlFor="message">
                                         Message
                                     </label>
                                     <textarea
@@ -107,41 +107,46 @@ const Contact = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <h2 className="text-xl font-semibold mb-2">Connect with Me</h2>
-                        <p className="mb-4">Let's connect on social media to stay updated with my latest work and projects.</p>
-                        <div className="flex space-x-4">
-                            <a href="https://linkedin.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                                <FaLinkedin className="text-xl" /> LinkedIn
-                            </a>
-                            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                                <FaTwitter className="text-xl" /> Twitter
-                            </a>
-                            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:underline">
-                                <FaGithub className="text-xl" /> GitHub
-                            </a>
+                        <h2 className="card-header px-4 rounded-t py-3 bg-gray-200 dark:bg-gray-700 text-xl font-semibold mb-2">Connect with Me</h2>
+                        <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
+                            <p className="mb-4">Let's connect on social media to stay updated with my latest work and projects.</p>
+                            <div className="flex space-x-4">
+                                <a href="https://linkedin.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                                    <FaLinkedin className="text-xl" /> LinkedIn
+                                </a>
+                                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                                    <FaTwitter className="text-xl" /> Twitter
+                                </a>
+                                <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:underline">
+                                    <FaGithub className="text-xl" /> GitHub
+                                </a>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
 
+
                 <div className="mt-8">
-                    <motion.div className="card rounded shadow-lg"
+                    <motion.div className="card rounded  shadow-lg"
                         variants={cardVariants}
                         initial="hidden"
                         animate="visible"
                     >
-                        <h2 className="text-xl font-semibold mb-2">My Location</h2>
-                        <p className="mb-4">You can find me here. Feel free to reach out or stop by for a coffee.</p>
-                        <div className="rounded-lg overflow-hidden">
-                            {/* Placeholder for Google Maps */}
-                            <iframe
-                                title="My Location"
-                                width="100%"
-                                height="300"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-122.084249!3d37.422186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbbc1f65e14af%3A0xf9df6a42e6cbf160!2sYour%20Location!5e0!3m2!1sen!2sus!4v1631512345678!5m2!1sen!2sus"
-                                frameBorder="0"
-                                allowFullScreen=""
-                                loading="lazy"
-                            ></iframe>
+                        <h2 className="card-header px-4 rounded-t py-3 bg-gray-200 dark:bg-gray-700 text-xl font-semibold mb-2">My Location</h2>
+                        <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
+                            <p className="mb-4">You can find me here. Feel free to reach out or stop by for a coffee.</p>
+                            <div className="rounded-lg overflow-hidden">
+                                {/* Placeholder for Google Maps */}
+                                <iframe
+                                    title="My Location"
+                                    width="100%"
+                                    height="300"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-122.084249!3d37.422186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbbc1f65e14af%3A0xf9df6a42e6cbf160!2sYour%20Location!5e0!3m2!1sen!2sus!4v1631512345678!5m2!1sen!2sus"
+                                    frameBorder="0"
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                ></iframe>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
