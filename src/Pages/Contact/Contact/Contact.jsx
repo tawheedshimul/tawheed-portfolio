@@ -19,14 +19,14 @@ const Contact = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <div className="card-header px-4 rounded-t py-3 bg-gray-200">
+                        <div className="card-header px-4 rounded-t py-3 dark:bg-gray-700">
                             <h2 className="text-xl font-semibold">Contact Information</h2>
                         </div>
-                        <div className="card-body rounded-b px-4 py-3">
+                        <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
                             <ul className="flex flex-col space-y-2">
                                 <li className="flex items-center">
-                                    <FaEnvelope className="text-gray-600 mr-2" />
-                                    <span className="text-gray-700">Email: your.email@example.com</span>
+                                    <FaEnvelope className="text-gray-600 dark:text-gray-100 mr-2" />
+                                    <span className="text-gray-700 dark:text-gray-200">Email: your.email@example.com</span>
                                 </li>
                                 <li className="flex items-center">
                                     <FaPhone className="text-gray-600 mr-2" />
@@ -45,7 +45,7 @@ const Contact = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <div className="card-header px-4 rounded-t py-3 bg-gray-200">
+                        <div className="card-header px-4 rounded-t py-3 dark:bg-gray-700">
                             <h2 className="text-xl font-semibold">Contact Form</h2>
                         </div>
                         <div className="card-body rounded-b px-4 py-3">
