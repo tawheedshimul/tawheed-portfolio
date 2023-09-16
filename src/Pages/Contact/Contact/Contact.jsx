@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <div className="min-h-screen flex flex-col justify-center items-center mx-auto bg-gray-100">
             <div className="bg-white dark:bg-black dark:text-white p-8 rounded shadow-lg w-full">
-                <h1 className="text-3xl font-semibold mb-4">Contact Me</h1>
+                <h1 className="text-3xl text-center text-white rounded bg-cyan-400 py-2 font-semibold mb-4">Contact Me</h1>
 
                 <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <motion.div className="card rounded shadow-lg"
