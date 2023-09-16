@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone, FaMapMarker, FaLinkedin, FaTwitter, FaGithub } fro
 const Contact = () => {
     return (
         <div className="min-h-screen flex flex-col justify-center items-center container mx-auto bg-gray-100">
-            <div className="bg-white p-8 rounded shadow-lg w-fill">
+            <div className="bg-white dark:bg-black dark:text-red-500 p-8 rounded shadow-lg w-fill">
                 <div>
                     <h1 className="text-3xl font-semibold mb-4">Contact Me</h1>
                     <div className="mb-4">
