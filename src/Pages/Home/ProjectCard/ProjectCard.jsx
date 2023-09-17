@@ -2,85 +2,69 @@ import React from 'react'
 
 function ProjectCard() {
     return (
-        <div class="flex flex-wrap justify-center mt-10">
+        <div className='dark:bg-black dark:text-white'>
+            <h2 className='text-center text-gray-600 text-3xl bg-gray-200 p-2 container mx-auto rounded font-semibold'>Knowledge</h2>
+            <div className="container mx-auto flex justify-center ">
+                <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
 
-            <div class="p-4 max-w-sm">
-                <div class="flex rounded-lg h-full bg-teal-400 p-8 flex-col">
-                    <div class="flex items-center mb-3">
-                        <div
-                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
+                    {/* 1st card    */}
+                    <div class="max-w-sm dark:bg-gray-800 border dark:border-white dark:text-white rounded overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="" />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Html</div>
+                            <p class="text-gray-700 dark:text-white text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
                         </div>
-                        <h2 class="text-white text-lg font-medium">Feature 1</h2>
+                        <div class="px-6 pt-4 pb-2">
+                            <span class="inline-block bg-gray-200 dark:bg-white rounded px-3 py-1 text-sm font-semibold text-gray-700  mr-2 mb-2">See More...</span>
+                        </div>
                     </div>
-                    <div class="flex flex-col justify-between flex-grow">
-                        <p class="leading-relaxed text-base text-white">Blue bottle crucifix vinyl post-ironic four dollar
-                            toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-                        <a href="#" class="mt-3 text-black hover:text-blue-600 inline-flex items-center">Learn More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
+                     {/* 1st end  */}
+                    {/* 1st card    */}
+                    <div class="max-w-sm dark:bg-gray-800 border dark:border-white dark:text-white rounded overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="" />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Html</div>
+                            <p class="text-gray-700 dark:text-white text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span class="inline-block bg-gray-200 dark:bg-white rounded px-3 py-1 text-sm font-semibold text-gray-700  mr-2 mb-2">See More...</span>
+                        </div>
                     </div>
+                     {/* 1st end  */}
+                    {/* 1st card    */}
+                    <div class="max-w-sm dark:bg-gray-800 border dark:border-white dark:text-white rounded overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="" />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Html</div>
+                            <p class="text-gray-700 dark:text-white text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span class="inline-block bg-gray-200 dark:bg-white rounded px-3 py-1 text-sm font-semibold text-gray-700  mr-2 mb-2">See More...</span>
+                        </div>
+                    </div>
+                     {/* 1st end  */}
+                    {/* 1st card    */}
+                    <div class="max-w-sm dark:bg-gray-800 border dark:border-white dark:text-white rounded overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="" />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Html</div>
+                            <p class="text-gray-700 dark:text-white text-base">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span class="inline-block bg-gray-200 dark:bg-white rounded px-3 py-1 text-sm font-semibold text-gray-700  mr-2 mb-2">See More...</span>
+                        </div>
+                    </div>
+                     {/* 1st end  */}
                 </div>
             </div>
-
-
-            <div class="p-4 max-w-sm">
-                <div class="flex rounded-lg h-full bg-teal-400 p-8 flex-col">
-                    <div class="flex items-center mb-3">
-                        <div
-                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <h2 class="text-white text-lg font-medium">Feature 2</h2>
-                    </div>
-                    <div class="flex flex-col justify-between flex-grow">
-                        <p class="leading-relaxed text-base text-white">Lorem ipsum dolor sit amet. In quos laboriosam non
-                            neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.</p>
-                        <a href="#" class="mt-3 text-black hover:text-blue-600 inline-flex items-center">Learn More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="p-4 max-w-sm">
-                <div class="flex rounded-lg h-full bg-teal-400 p-8 flex-col">
-                    <div class="flex items-center mb-3">
-                        <div
-                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <h2 class="text-white text-lg font-medium">Feature 3</h2>
-                    </div>
-                    <div class="flex flex-col justify-between flex-grow">
-                        <p class="leading-relaxed text-base text-white">Lorem ipsum dolor sit amet. In quos laboriosam non
-                            neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.</p>
-                        <a href="#" class="mt-3 text-black hover:text-blue-600 inline-flex items-center">Learn More
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     )
 }
