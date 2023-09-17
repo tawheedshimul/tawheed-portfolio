@@ -7,3 +7,24 @@
         scroll-behavior: smooth;
     }
 }
+
+:root {
+    --background-light: #FFFFFF;
+    /* Light mode background color */
+    --background-dark: #000000;
+    /* Dark mode background color */
+}
+
+body {
+    background-color: var(--background-light);
+    /* Default to light mode */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background-dark);
+        /* Switch to dark mode background */
+    }
+}
