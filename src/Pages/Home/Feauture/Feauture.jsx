@@ -7,7 +7,7 @@ function Feauture() {
             {/* Code block starts */}
             <section className="mx-auto container bg-white dark:bg-black dark:text-white pt-10">
                 <div>
-                    <div  className="flex items-center bg-gray-200 rounded p-2 flex-col px-4">
+                    <div  className="flex items-center bg-gray-200 dark:bg black dark:border border-cyan-400 rounded p-2 flex-col px-4">
                         <p className="focus:outline-none uppercase text-sm text-center  leading-4">in few easy steps</p>
                         <h1 className="focus:outline-none text-3xl font-bold text-center leading-10 text-gray-800 dark:text-gray-100 lg:w-5/12 md:w-9/12 pt-4">Create Beautiful Web Apps by REACT</h1>
                     </div>
