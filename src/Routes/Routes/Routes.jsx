@@ -6,6 +6,8 @@ import ErrorPage from "../../Pages/EroorPage/EroorPage";
 import AboutMe from "../../Pages/About/AboutMe";
 import Player from "../../Pages/Player/Player";
 import Project from "../../Pages/Project/Project/Project";
+import CardDetails from "../../Pages/Home/ProjectCard/CardDetails";
+import Service from "../../Pages/Services/Service/Service";
 
 
 
@@ -33,8 +35,16 @@ export const router = createBrowserRouter([
         element: <AboutMe></AboutMe>
       },
       {
+        path: '/service',
+        element: <Service></Service>
+      },
+      {
         path: '/player',
         element: <Player></Player>
+      },
+      {
+        path: "/project/:id",
+        element: <CardDetails></CardDetails>
       },
 
     ]
