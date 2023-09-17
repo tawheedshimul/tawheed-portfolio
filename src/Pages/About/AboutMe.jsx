@@ -1,5 +1,5 @@
 import React from 'react'
-import UserProfile from './userProfile';
+import UserProfile from './UserProfile';
 import PersonalInfo from './PersonalInfo';
 
 function AboutMe() {
