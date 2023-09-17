@@ -23,7 +23,7 @@ function UserProfile() {
   };
 
   return (
-    <div className="bg-white dark:bg-black dark:text-white rounded-lg shadow-xl pb-8">
+    <div className="bg-white dark:bg-black dark:text-white rounded-t-lg shadow-xl pb-8">
       <div className="w-full h-[250px]">
         <img
           src="https://vojislavd.com/ta-template-demo/assets/img/profile-background.jpg"
