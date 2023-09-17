@@ -60,9 +60,9 @@ const Navbar = () => {
 
 
         <div className="flex">
-          <Link to='/player'><FaYoutube className='text-red-500 text-4xl hover:scale-110 transition duration-500 ease-in-out'></FaYoutube></Link>
+          <Link to='/player'><FaYoutube className='text-red-500 text-4xl  hover:scale-110 transition duration-500 ease-in-out'></FaYoutube></Link>
           <div className="md:hidden">
-            <button onClick={toggleNavbar} className="text-gray-100 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 rounded p-2 text-xl focus:outline-none">
+            <button onClick={toggleNavbar} className="text-gray-100 bg-gradient-to-r ms-2 from-purple-500 via-indigo-500 to-blue-500 rounded p-2 text-xl focus:outline-none">
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
@@ -81,29 +81,29 @@ const Navbar = () => {
               onClick={closeNavbar}
             ></motion.div>
             <motion.div
-              className="fixed top-0 right-0 w-5/6 h-full bg-gray-200 shadow-lg z-40"
+              className="fixed top-0 right-0 w-5/6 h-full bg-gray-200 dark:bg-black dark:text-white shadow-lg z-40"
               initial="hidden"
               animate="visible"
               exit="exit"
               variants={menuVariants}
             >
               <div className="p-4">
-                <button onClick={toggleNavbar} className="text-gray-600">
+                <button onClick={toggleNavbar}>
                   <FaTimes className="text-2xl" />
                 </button>
               </div>
-              <div className="py-4 space-y-2">
-                <Link onClick={closeNavbar} to="/" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
-                  <span className='mx-2'>Home</span>
+              <div className="py-4 space-y-2 grid grid-cols-1 ">
+                <Link onClick={closeNavbar} to="/" className="text-xl">
+                  <span className='mx-4 border-b-2 border-gray-600 dark:border-gray-100'>Home</span>
                 </Link>
-                <Link onClick={closeNavbar} to="/about" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
-                  <span className='mx-2'>About</span>
+                <Link onClick={closeNavbar} to="/about" className="text-xl">
+                  <span className='mx-4 border-b-2 border-gray-600 dark:border-gray-100'>About</span>
                 </Link>
-                <Link onClick={closeNavbar} to="/projects" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
-                  <span className='mx-2'>Project</span>
+                <Link onClick={closeNavbar} to="/projects" className="text-xl">
+                  <span className='mx-4 border-b-2 border-gray-600 dark:border-gray-100'>Project</span>
                 </Link>
-                <Link onClick={closeNavbar} to="/contact" className="inline-block w-full mx-2 py-3 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none focus:ring">
-                  <span className='mx-2'>Contact</span>
+                <Link onClick={closeNavbar} to="/contact" className="text-xl">
+                  <span className='mx-4 border-b-2 border-gray-600 dark:border-gray-100'>Contact</span>
                 </Link>
 
               </div>
