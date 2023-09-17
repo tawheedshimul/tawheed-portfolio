@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer/Footer';
 
 const Main = () => {
     return (
-        <div className='space-y-15'>
+        <div className='space-y-[60px]'>
             <div className='fixed top-0 w-full z-40'>
                 <Navbar></Navbar>
             </div>
