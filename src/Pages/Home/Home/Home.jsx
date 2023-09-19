@@ -3,6 +3,7 @@ import Hero from '../Hero/Hero';
 import CarouselComponent from '../CarouselComponent/CarouselComponent';
 import Feauture from '../Feauture/Feauture';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import Loader from '../../Loader/Loader';
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             {/* <CarouselComponent></CarouselComponent> */}
             <ProjectCard></ProjectCard>
             <Feauture></Feauture>
+            <Loader></Loader>
         </div>
     )
 }

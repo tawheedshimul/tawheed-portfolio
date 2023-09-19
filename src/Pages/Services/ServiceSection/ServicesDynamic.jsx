@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import Loader from "../../Loader/Loader";
 
 const ServicesDynamic = () => {
     const { id } = useParams(); // Get the service ID from the URL parameter
@@ -17,7 +18,9 @@ const ServicesDynamic = () => {
     }, [id]);
 
     if (!service) {
-        return <div className="text-red-500">Service not found</div>;
+        return <div className="text-red-500">
+            <Loader></Loader>
+        </div>;
     }
 
     // Destructure service properties

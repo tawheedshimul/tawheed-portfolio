@@ -1,20 +1,47 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import Loader from "../../Loader/Loader";
 
-function CardDetails({ }) {
-    // const [card, setCard] = useState(0);
+const CardDetails = () => {
+    const { id } = useParams(); // Get the service ID from the URL parameter
+    const [service, setService] = useState(null);
+
+    useEffect(() => {
+        // Fetch the specific service data based on the ID
+        fetch('/mernData.json') // The path is relative to the public folder
+            .then((response) => response.json())
+            .then((data) => {
+                const selectedService = data.find((item) => item.id === parseInt(id, 10));
+                setService(selectedService);
+            })
+            .catch((error) => console.error('Error fetching data:', error));
+    }, [id]);
+
+    if (!service) {
+        return <div className="text-red-500">
+            <Loader></Loader>
+        </div>;
+    }
+
+    const { img, title, description } = service;
+
     return (
-        <body class="bg-gray-100">
-            <div class="min-h-screen flex flex-col justify-center items-center">
-                <img src="https://www.svgrepo.com/show/426192/cogs-settings.svg" alt="" />
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-700 mb-4">Site is under maintenance</h1>
-                <p class="text-center text-gray-500 text-lg md:text-xl lg:text-2xl mb-8">We're working hard to improve the user experience. Stay tuned!</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded">Contact Us</a>
-                    <a href="#" class="border-2 border-gray-800 text-black font-bold py-3 px-6 rounded">Reload</a>
+        <div className="flex justify-center items-center">
+            <div className="bg-white dark:bg-black dark:text-white border dark:border-gray-300 shadow-md rounded-lg container mx-auto">
+                <img src={img} alt={title} className="w-full h-full object-cover" />
+                <div className="p-4">
+                    <h2 className="text-2xl font-semibold mb-2">{title}</h2>
+                    <p className="mb-4 text-justify">{description}</p>
+                    <p className="text-justify bg-red-500 text-gray-100 p-2 rounded ">Contact me if you're interested in any kind of cutting-edge, fully functional website. just simply
+                        <Link to='/contact' className="relative flex font-semibold w-24 items-center text-black bg-white p-2 rounded">
+                            Click Here
+                            <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-sky-400 opacity-75"></span>
+                        </Link>
+                    </p>
                 </div>
             </div>
-        </body>
-    )
-}
+        </div>
+    );
+};
 
 export default CardDetails;
