@@ -8,6 +8,7 @@ import Player from "../../Pages/Player/Player";
 import Project from "../../Pages/Project/Project/Project";
 import CardDetails from "../../Pages/Home/ProjectCard/CardDetails";
 import Service from "../../Pages/Services/Service/Service";
+import ServicesDynamic from "../../Pages/Services/ServiceSection/ServicesDynamic";
 
 
 
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: "/project/:id",
         element: <CardDetails></CardDetails>
+      },
+      {
+        path: "/services/:id",
+        element: <ServicesDynamic></ServicesDynamic>
       },
 
     ]

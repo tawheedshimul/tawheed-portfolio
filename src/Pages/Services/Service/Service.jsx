@@ -1,12 +1,12 @@
 import React from 'react'
-import ServiceSection from '../ServiceSection/ServiceSection';
+import ServicesSection from '../ServiceSection/ServiceSection';
 
 function Service() {
-    return (
-        <div>
-            <ServiceSection></ServiceSection>
-        </div>
-    )
+  return (
+    <div>
+        <ServicesSection></ServicesSection>
+    </div>
+  )
 }
 
 export default Service;

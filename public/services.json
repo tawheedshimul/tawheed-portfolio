@@ -1,0 +1,92 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "role": "React Developer",
+            "description": " React developer plays a key role in building the user interface of web applications using the React library. They combine their knowledge of JavaScript, React, and front-end development principles to create interactive and user-friendly web experiences.",
+            "skills": [
+                "React",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "API integration"
+            ],
+            "image": "https://th.bing.com/th/id/OIP.INQ672hwnamnr3csmiAUhAHaE-?pid=ImgDet&rs=1"
+        },
+        {
+            "id": 2,
+            "role": "JavaScript Developer",
+            "description": "Proficient in JavaScript programming for both front-end and back-end development.",
+            "skills": [
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "API integration",
+                "Node.js"
+            ],
+            "image": "https://th.bing.com/th/id/R.00ff63f1ad42ff1ce456915c37e85d49?rik=r3W6fWodrS9Pdg&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 3,
+            "role": "MERN Stack Developer",
+            "description": "Skilled in developing full-stack applications using the MERN (MongoDB, Express, React, Node.js) stack.",
+            "skills": [
+                "MongoDB",
+                "Express",
+                "React",
+                "Node.js",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "API integration"
+            ],
+            "image": "https://th.bing.com/th/id/R.2898d743c3c2bf03a45f7c6d9181efe6?rik=AH5fwquYrwm%2bNw&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 4,
+            "role": "HTML Developer",
+            "description": "Proficient in creating and structuring web pages using HTML5.",
+            "skills": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "https://th.bing.com/th/id/R.f877961b7ea6ccc18b6178c1cddc6ff4?rik=6yz%2b8a1P2bevtA&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 5,
+            "role": "CSS",
+            "description": "Skilled in designing and styling web pages using CSS3.",
+            "skills": [
+                "CSS",
+                "HTML",
+                "JavaScript"
+            ],
+            "image": "https://th.bing.com/th/id/R.919de1b2953258877aff525b38e5f0ac?rik=B9GLOUqguS048g&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 6,
+            "role": "TailwindCSS Developer",
+            "description": "Experienced in using the Tailwind CSS framework for efficient and responsive web development.",
+            "skills": [
+                "Tailwind CSS",
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "https://th.bing.com/th/id/R.db6b4fb7d6e2d454728ce61023c8ab3d?rik=L4BBK38GuQIh2g&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 7,
+            "role": "Bootstrap Developer",
+            "description": "Proficient in building responsive and visually appealing web pages using the Bootstrap framework.",
+            "skills": [
+                "Bootstrap",
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "https://th.bing.com/th/id/R.56be615bbca4502de5d55d721dae917f?rik=fBByEvq7GKgOOQ&pid=ImgRaw&r=0"
+        }
+    ]
+}
