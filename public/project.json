@@ -1,73 +1,72 @@
 [
-    {
-      "id": 1,
-      "imageUrl": "https://source.unsplash.com/Lki74Jj7H-U/400x300",
-      "category": "Reliable Schemas",
-      "title": "What Zombies Can Teach You About Food",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla delectus corporis commodi aperiam, amet cupiditate?"
-    },
-    {
-      "id": 2,
-      "imageUrl": "https://source.unsplash.com/L9_6GOv40_E/400x300",
-      "category": "Client-based Adoption",
-      "title": "Old School Art",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla delectus."
-    },
-    {
-      "id": 3,
-      "imageUrl": "https://source.unsplash.com/7JX0-bfiuxQ/400x300",
-      "category": "Intellectual Capital",
-      "title": "5 Things To Do About Rain",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, neque. Eius, ea possimus."
-    },
-    {
-      "id": 4,
-      "imageUrl": "https://source.unsplash.com/ywToDvH7mNw/400x300",
-      "category": "Technology Trends",
-      "title": "The Future of AI and Machine Learning",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, veniam."
-    },
-    {
-      "id": 5,
-      "imageUrl": "https://source.unsplash.com/z7CKf6eBc_I/400x300",
-      "category": "Business Strategies",
-      "title": "Scaling Your Startup: Challenges and Solutions",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, facere."
-    },
-    {
-      "id": 6,
-      "imageUrl": "https://source.unsplash.com/Wf4Jr2F0_ik/400x300",
-      "category": "Creative Ideas",
-      "title": "Exploring Innovative Design Concepts",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quae!"
-    },
-    {
-      "id": 7,
-      "imageUrl": "https://source.unsplash.com/2tyBvrqHAYs/400x300",
-      "category": "Health and Wellness",
-      "title": "Meditation and Its Benefits for Mind and Body",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, quisquam."
-    },
-    {
-      "id": 8,
-      "imageUrl": "https://source.unsplash.com/cp9ZQbJdE-Q/400x300",
-      "category": "Environmental Sustainability",
-      "title": "Reducing Carbon Footprints: A Global Initiative",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, fugiat."
-    },
-    {
-      "id": 9,
-      "imageUrl": "https://source.unsplash.com/A9xLQjvjd9U/400x300",
-      "category": "Travel Adventures",
-      "title": "Journeying through Exotic Destinations",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, tempora."
-    },
-    {
-      "id": 10,
-      "imageUrl": "https://source.unsplash.com/9cM7U6aDftQ/400x300",
-      "category": "Artistic Expression",
-      "title": "The Beauty of Abstract Art",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, aspernatur."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "imageUrl": "https://source.unsplash.com/Lki74Jj7H-U/400x300",
+    "category": "Reliable Schemas",
+    "title": "What Zombies Can Teach You About Food",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla delectus corporis commodi aperiam, amet cupiditate?"
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://source.unsplash.com/L9_6GOv40_E/400x300",
+    "category": "Client-based Adoption",
+    "title": "Old School Art",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla delectus."
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://source.unsplash.com/7JX0-bfiuxQ/400x300",
+    "category": "Intellectual Capital",
+    "title": "5 Things To Do About Rain",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, neque. Eius, ea possimus."
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://source.unsplash.com/ywToDvH7mNw/400x300",
+    "category": "Technology Trends",
+    "title": "The Future of AI and Machine Learning",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, veniam."
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://source.unsplash.com/z7CKf6eBc_I/400x300",
+    "category": "Business Strategies",
+    "title": "Scaling Your Startup: Challenges and Solutions",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, facere."
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://source.unsplash.com/Wf4Jr2F0_ik/400x300",
+    "category": "Creative Ideas",
+    "title": "Exploring Innovative Design Concepts",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quae!"
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://source.unsplash.com/2tyBvrqHAYs/400x300",
+    "category": "Health and Wellness",
+    "title": "Meditation and Its Benefits for Mind and Body",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, quisquam."
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://source.unsplash.com/cp9ZQbJdE-Q/400x300",
+    "category": "Environmental Sustainability",
+    "title": "Reducing Carbon Footprints: A Global Initiative",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, fugiat."
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://source.unsplash.com/A9xLQjvjd9U/400x300",
+    "category": "Travel Adventures",
+    "title": "Journeying through Exotic Destinations",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, tempora."
+  },
+  {
+    "id": 10,
+    "imageUrl": "https://source.unsplash.com/9cM7U6aDftQ/400x300",
+    "category": "Artistic Expression",
+    "title": "The Beauty of Abstract Art",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, aspernatur."
+  }
+]

@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaEnvelope, FaPhone, FaMapMarker, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
     const cardVariants = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    };
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('tportfolio', 'tportfolio', form.current, 'S2gfEm0SlJ-TKuBe5')
+            .then((result) => {
+                toast.success('Message Sent Successfully');
+                // Reset the form to clear input fields
+                form.current.reset();
+            })
+            .catch((error) => {
+                toast.error('Message Not Sent');
+            });
     };
 
     return (
@@ -49,7 +68,7 @@ const Contact = () => {
                             <h2 className="text-xl font-semibold">Contact Form</h2>
                         </div>
                         <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
-                            <form>
+                            <form ref={form} onSubmit={sendEmail}>
                                 <div className="mb-4">
                                     <label className="block text-gray-600 dark:text-gray-100 font-semibold mb-2" htmlFor="name">
                                         Your Name
@@ -58,9 +77,9 @@ const Contact = () => {
                                         className="border border-gray-300 rounded w-full py-2 px-3"
                                         type="text"
                                         id="name"
-                                        name="name"
                                         placeholder="John Doe"
                                         required
+                                        name="user_name"
                                     />
                                 </div>
                                 <div className="mb-4">
@@ -71,7 +90,7 @@ const Contact = () => {
                                         className="border border-gray-300 rounded w-full py-2 px-3"
                                         type="email"
                                         id="email"
-                                        name="email"
+                                        name="user_email"
                                         placeholder="youremail@example.com"
                                         required
                                     />
@@ -89,43 +108,13 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="text-center">
-                                    <button
-                                        className="bg-gray-500 dark:bg-gray-100 dark:text-gray-800 text-white  py-2 px-4 rounded hover:bg-gray-600 transition duration-300"
-                                        type="submit"
-                                    >
-                                        Send Message
-                                    </button>
+                                    <input className="bg-gray-500 cursor-pointer dark:bg-gray-100 dark:text-gray-800 text-white  py-2 px-4 rounded hover:bg-gray-600 transition duration-300" type="submit" value="Send Message" />
                                 </div>
                             </form>
                         </div>
                     </motion.div>
                 </motion.div>
-
-                <div className="mt-8">
-                    <motion.div className="card rounded shadow-lg"
-                        variants={cardVariants}
-                        initial="hidden"
-                        animate="visible"
-                    >
-                        <h2 className="card-header px-4 rounded-t py-3 bg-gray-200 dark:bg-gray-700 text-xl font-semibold mb-2">Connect with Me</h2>
-                        <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
-                            <p className="mb-4">Let's connect on social media to stay updated with my latest work and projects.</p>
-                            <div className="flex space-x-4">
-                                <a href="https://linkedin.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                                    <FaLinkedin className="text-xl" /> LinkedIn
-                                </a>
-                                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                                    <FaTwitter className="text-xl" /> Twitter
-                                </a>
-                                <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:underline">
-                                    <FaGithub className="text-xl" /> GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </motion.div>
-                </div>
-
-
+                {/* maps item  */}
                 <div className="mt-8">
                     <motion.div className="card rounded  shadow-lg"
                         variants={cardVariants}

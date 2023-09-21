@@ -28,10 +28,23 @@ const Navbar = () => {
     },
   };
 
+  const top = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Use smooth scrolling for a nice effect
+    });
+  }
+
 
   const closeNavbar = () => {
     setIsOpen(false);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Use smooth scrolling for a nice effect
+    });
   };
+
+
 
   return (
     <nav className="bg-gray-200 dark:bg-black dark:text-white text-gray-800 p-2 border-b border-cyan-400">
@@ -45,19 +58,19 @@ const Navbar = () => {
         </Link>
 
         <div class="hidden md:flex space-x-4">
-          <NavLink to="/" className="inline-block w-full mx-2 px-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
+          <NavLink onClick={top} to="/" className="inline-block w-full mx-2 px-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
             <span className='mx-2'>Home</span>
           </NavLink>
-          <NavLink to="/about" className="inline-block w-full px-2 mx-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
+          <NavLink onClick={top} to="/about" className="inline-block w-full px-2 mx-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
             <span className='mx-2'>About</span>
           </NavLink>
-          <NavLink to="/contact" className="inline-block w-full px-2 mx-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
+          <NavLink onClick={top} to="/contact" className="inline-block w-full px-2 mx-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
             <span className='mx-2'>Contact</span>
           </NavLink>
-          <NavLink to="/service" className="inline-block w-full px-2 mx-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
+          <NavLink onClick={top} to="/service" className="inline-block w-full px-2 mx-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
             <span className='mx-2'>Services</span>
           </NavLink>
-          <NavLink to="/projects" className="inline-block w-full px-2 mx-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
+          <NavLink onClick={top} to="/projects" className="inline-block w-full px-2 mx-2 py-2 text-sm font-medium text-violet-600 border border-violet-600 rounded hover:bg-violet-600 hover:text-white active:bg-indigo-500 focus:outline-none ">
             <span className='mx-2'>Project</span>
           </NavLink>
         </div>
