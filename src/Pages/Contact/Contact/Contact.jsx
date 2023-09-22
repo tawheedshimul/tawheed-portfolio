@@ -74,7 +74,7 @@ const Contact = () => {
                                         Your Name
                                     </label>
                                     <input
-                                        className="border border-gray-300 rounded w-full py-2 px-3"
+                                        className="border border-gray-300 dark:text-black rounded w-full py-2 px-3"
                                         type="text"
                                         id="name"
                                         placeholder="John Doe"
@@ -100,7 +100,7 @@ const Contact = () => {
                                         Message
                                     </label>
                                     <textarea
-                                        className="border border-gray-300 rounded w-full py-2 px-3 h-32 resize-none"
+                                        className="border border-gray-300 dark:text-black rounded w-full py-2 px-3 h-32 resize-none"
                                         id="message"
                                         name="message"
                                         placeholder="Type your message here..."
