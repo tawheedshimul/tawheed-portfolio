@@ -44,6 +44,10 @@ const Navbar = () => {
     });
   };
 
+  const closeNav = () => {
+    setIsOpen(false);
+  };
+
 
 
   return (
@@ -95,7 +99,7 @@ const Navbar = () => {
               initial="hidden"
               animate="visible"
               exit="exit"
-              onClick={closeNavbar}
+              onClick={closeNav}
             ></motion.div>
             <motion.div
               className="fixed top-0 right-0 w-5/6 h-full bg-gray-200 dark:bg-black dark:text-white shadow-lg z-40"
