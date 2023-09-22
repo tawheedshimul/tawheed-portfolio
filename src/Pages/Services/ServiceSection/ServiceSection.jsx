@@ -12,7 +12,7 @@ const ServicesSection = () => {
   }, []);
 
   return (
-    <div className="services-section grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 container mx-auto">
+    <div className="services-section grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto">
       {servicesData.services.map((service) => (
         <div
           className="service-card w-fit p-4 rounded-lg shadow-lg bg-white"
