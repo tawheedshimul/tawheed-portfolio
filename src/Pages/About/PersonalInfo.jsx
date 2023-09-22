@@ -2,7 +2,7 @@ import React from 'react';
 
 function PersonalInfo() {
     return (
-        <div className="flex-1 bg-gray-100 dark:bg-black dark:text-white rounded-b-lg shadow-xl p-8">
+        <div className="flex-1 bg-gray-100 dark:bg-black dark:text-white shadow-xl p-8">
             <h4 className="text-xl  font-bold">Personal Info</h4>
             <ul className="mt-2 ">
                 <li className="flex border-y py-2">

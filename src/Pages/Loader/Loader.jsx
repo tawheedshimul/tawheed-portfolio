@@ -8,7 +8,7 @@ const Loader = () => {
         // Simulate an asynchronous operation, like fetching data
         setTimeout(() => {
             setIsLoading(false);
-        }, 100000000); // Simulate loading for 3 seconds
+        }, 6000); // Simulate loading for 3 seconds
     }, []);
 
     return (
