@@ -119,7 +119,7 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="text-center">
-                                    <input onClick={handleClick} className="bg-gray-500 cursor-pointer dark:bg-gray-100 dark:text-gray-800 text-white  py-2 px-4 rounded hover:bg-gray-600 transition duration-300" type="submit" value={isClicked ? 'SUBMITTING' : 'SUBMIT'} />
+                                    <input onClick={handleClick} className="bg-gray-500 cursor-pointer dark:bg-gray-100 dark:text-gray-800 text-white  py-2 px-4 rounded transition duration-300" type="submit" value={isClicked ? 'SUBMITTING' : 'SUBMIT'} />
                                 </div>
                             </form>
                         </div>
