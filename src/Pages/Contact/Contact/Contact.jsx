@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { FaEnvelope, FaPhone, FaMapMarker, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import MyButton from "./Button";
 
 const Contact = () => {
     const cardVariants = {
@@ -27,8 +28,20 @@ const Contact = () => {
             });
     };
 
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = () => {
+        setIsClicked(true);
+
+        // Reset the button state after a delay
+        setTimeout(() => {
+            setIsClicked(false);
+        }, 1500);
+    };
+
     return (
         <div className="min-h-screen flex flex-col justify-center items-center mx-auto bg-gray-100">
+            <MyButton></MyButton>
             <div className="bg-white dark:bg-black dark:text-white p-8 rounded shadow-lg w-full">
                 <h1 className="text-3xl text-center text-white rounded bg-cyan-400 py-2 font-semibold mb-4">Contact Me</h1>
 
@@ -108,7 +121,7 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="text-center">
-                                    <input className="bg-gray-500 cursor-pointer dark:bg-gray-100 dark:text-gray-800 text-white  py-2 px-4 rounded hover:bg-gray-600 transition duration-300" type="submit" value="Send Message" />
+                                    <input onClick={handleClick} className="bg-gray-500 cursor-pointer dark:bg-gray-100 dark:text-gray-800 text-white  py-2 px-4 rounded hover:bg-gray-600 transition duration-300" type="submit" value={isClicked ? 'SUBMITTING' : 'SUBMIT'} />
                                 </div>
                             </form>
                         </div>
