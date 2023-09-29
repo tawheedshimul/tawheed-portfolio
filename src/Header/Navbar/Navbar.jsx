@@ -18,13 +18,13 @@ const Navbar = () => {
     visible: {
       x: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.2,
       },
     },
     exit: {
       x: '100%', // Change this to '100%' to slide the menu out to the right
       transition: {
-        duration: 0.3,
+        duration: 0.4,
       },
     },
   };
@@ -56,7 +56,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to='/'
-          className=" glow-button py-2 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold rounded px-8 text-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105"
+          className="glow-button py-2 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold rounded px-8 text-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105"
           onClick={closeNavbar}
         >
           Tawheed
@@ -103,7 +103,7 @@ const Navbar = () => {
               onClick={closeNav}
             ></motion.div>
             <motion.div
-              className="fixed top-0 right-0 w-5/6 h-full bg-gray-200 dark:bg-black dark:text-white shadow-lg z-40"
+              className="fixed top-0 right-0 w-4/6 h-full bg-gray-200 dark:bg-black dark:text-white shadow-lg z-40 transition duration-500 ease-linear"
               initial="hidden"
               animate="visible"
               exit="exit"

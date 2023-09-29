@@ -31,7 +31,7 @@ function CardList() {
                 {cards.map((card, index) => (
                     <div
                         key={index}
-                        className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col  hover:scale-110 transition duration-500 ease-in-out"
+                        className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col"
                     >
                         <img
                             src={card.imageUrl}

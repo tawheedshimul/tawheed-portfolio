@@ -7,7 +7,7 @@ function Feauture() {
             {/* Code block starts */}
             <section className="mx-auto container dark:bg-black dark:text-white pt-10">
                 <div>
-                    <div  className="flex items-center bg-gray-200 dark:bg-black dark:border border-cyan-400 rounded p-2 flex-col px-4">
+                    <div className="flex items-center bg-gray-200 dark:bg-black dark:border border-cyan-400 rounded p-2 flex-col px-4">
                         <p className="focus:outline-none uppercase text-sm text-center  leading-4">in few easy steps</p>
                         <h1 className="focus:outline-none text-3xl font-bold text-center leading-10 text-gray-800 dark:text-gray-100 lg:w-5/12 md:w-9/12 pt-4">Create Beautiful Web Apps by REACT</h1>
                     </div>
@@ -20,8 +20,8 @@ function Feauture() {
                                 </div>
                             </div>
                             <div className="w-10/12">
-                                <h2 className="focus:outline-none text-lg font-bold leading-tight text-gray-800 dark:text-gray-100">Ready to use components</h2>
-                                <p className="focus:outline-none text-base  leading-normal pt-2">It provides a very simple start, no need to write a lot of code, you just import it and start the primitive components and create the ones you need.</p>
+                                <h2 className="focus:outline-none text-lg font-bold leading-tight text-gray-800 dark:text-gray-100">Ready to Make your Own website</h2>
+                                <p className="focus:outline-none text-base  leading-normal pt-2">You get to control your personal brand 77% of employers say they google candidate’s names as part of the hiring process. For most of us, they won’t find anything meaningful – probably a few tweets, or articles you’ve written. ...</p>
                             </div>
                         </div>
                         <div aria-label="card 2" className="focus:outline-none flex sm:w-full md:w-5/12 pb-20">
@@ -32,8 +32,8 @@ function Feauture() {
                                 </div>
                             </div>
                             <div className="w-10/12">
-                                <h2 className="focus:outline-none text-lg font-semibold leading-tight text-gray-800 dark:text-gray-100">Hight Quality UI you can reply on</h2>
-                                <p className="focus:outline-none text-base  leading-normal pt-2">Modify the visual appearance of your site – including colors, fonts, margins and other style-related properties – with a sophisticated style.</p>
+                                <h2 className="focus:outline-none text-lg font-semibold leading-tight text-gray-800 dark:text-gray-100">Do you want HIGH QUALITY website?</h2>
+                                <p className="focus:outline-none text-base  leading-normal pt-2">If you want high quality website just contact with me. I will bring for you high quality website</p>
                             </div>
                         </div>
                         <div aria-label="card 3" className="focus:outline-none flex sm:w-full md:w-5/12 pb-20">
@@ -45,7 +45,7 @@ function Feauture() {
                             </div>
                             <div className="w-10/12">
                                 <h2 className="focus:outline-none text-lg font-semibold leading-tight text-gray-800 dark:text-gray-100">Coded by Developers for Developers</h2>
-                                <p className="focus:outline-none text-base  leading-normal pt-2">Instead of just giving you the tools to create your own site, they offer you a list of themes you can choose from. Thus a handy product.</p>
+                                <p className="focus:outline-none text-base  leading-normal pt-2">WebDevelopers build our platform, and developers build on our platform — so we'll always care deeply and understand intuitively what our audience values. We know we’re just one part of a bigger, massively important ecosystem of developer tooling.</p>
                             </div>
                         </div>
                         <div aria-label="card 4" className="focus:outline-none flex sm:w-full md:w-5/12 pb-20">
@@ -56,8 +56,8 @@ function Feauture() {
                                 </div>
                             </div>
                             <div className="w-10/12">
-                                <h2 className="focus:outline-none text-lg font-semibold leading-tight text-gray-100">The Last UI kit you’ll ever need</h2>
-                                <p className="focus:outline-none text-base  leading-normal pt-2">We have chosen the bright color palettes that arouse the only positive emotions. The kit that simply assures to be loved by everyone.</p>
+                                <h2 className="focus:outline-none text-lg font-semibold leading-tight text-gray-100">Complete your Order...</h2>
+                                <p className="focus:outline-none text-base  leading-normal pt-2">Just pay me and wait some day. You will reacive your site soon.</p>
                             </div>
                         </div>
                     </div>
