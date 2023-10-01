@@ -63,6 +63,11 @@ const Player = () => {
             Url:
                 'https://www.youtube.com/watch?v=a6cJAFFQn_I&ab_channel=ZeeMusicCompany',
         },
+        {
+            name: 'Lardki kharap kar di',
+            Url:
+            'https://www.youtube.com/watch?v=mvCWGL_r-Zg',
+        },
     ]
     return (
         <div className="container mx-auto flex justify-center">
