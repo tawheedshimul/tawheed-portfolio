@@ -56,10 +56,10 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to='/'
-          className="glow-button py-2 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold rounded px-8 text-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105"
+          className="glow-button flex space-x-1 py-2 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold rounded px-8 text-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105"
           onClick={closeNavbar}
         >
-          Tawheed
+          <p>Tawheed</p> 
         </Link>
 
         <div class="hidden md:flex space-x-4">

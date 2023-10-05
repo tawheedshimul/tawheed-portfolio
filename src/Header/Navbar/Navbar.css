@@ -2,16 +2,42 @@
     border: none;
     cursor: pointer;
     animation: glow 1s infinite alternate;
+
+}
+
+.glow-button p {
+    scale: 1.2;
+    animation: rotateAnimation 3s ease-out infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
 }
 
 @keyframes glow {
     0% {
-        box-shadow: 0 0 5px 0px #0074d9;
+        box-shadow: 0 0 5px 0px #e0dbd157;
         transform: scale(1);
     }
 
     100% {
-        box-shadow: 0 0 20px 10px #5803a8;
+        box-shadow: 0 0 20px 10px #d9d3f73d;
         transform: scale(1);
     }
 }
