@@ -59,7 +59,7 @@ const Navbar = () => {
           className="glow-button flex space-x-1 py-2 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 text-white font-semibold rounded px-8 text-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105"
           onClick={closeNavbar}
         >
-          <p>Tawheed</p> 
+          <p>Tawheed</p>
         </Link>
 
         <div class="hidden md:flex space-x-4">
@@ -82,7 +82,12 @@ const Navbar = () => {
 
 
         <div className="flex">
-          <Link to='/player'><FaYoutube className='text-red-500 text-4xl  hover:scale-110 transition duration-500 ease-in-out'></FaYoutube></Link>
+          <Link to='/player'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 100 100">
+              <rect x="0" y="10" rx="10" ry="10" width="120" height="80" fill="red" />
+              <polygon points="35,25 35,75 75,50" fill="white" />
+            </svg>
+          </Link>
           <div className="md:hidden">
             <button onClick={toggleNavbar} className="text-gray-100 bg-gradient-to-r ms-2 from-purple-500 via-indigo-500 to-blue-500 rounded p-2 text-xl focus:outline-none">
               {isOpen ? <FaTimes /> : <FaBars />}
