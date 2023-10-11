@@ -84,8 +84,8 @@ const Navbar = () => {
         <div className="flex">
           <Link to='/player'>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 100 100">
-              <rect x="0" y="10" rx="10" ry="10" width="120" height="80" fill="red" />
-              <polygon points="35,25 35,75 75,50" fill="white" />
+              <rect x="0" y="7" rx="10" ry="100" width="120" height="80" fill="red" />
+              <polygon points="35,20 35,70 75,46" fill="white" />
             </svg>
           </Link>
           <div className="md:hidden">
