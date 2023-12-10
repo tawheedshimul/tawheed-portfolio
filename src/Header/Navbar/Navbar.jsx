@@ -22,8 +22,8 @@ const Navbar = () => {
 
   const menuVariants = {
     hidden: { opacity: 0, x: 1000 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-    exit: { opacity: 1, x: -1000, transition: { duration: .5 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.1 } },
+    exit: { opacity: 1, x: -1000, transition: { duration: .4 } },
   };
 
   const top = () => {
