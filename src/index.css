@@ -10,5 +10,6 @@
 
 .active {
     color: white;
-    background-color: #7c3aed;
+    border-bottom-width: 2px;
+    border-color: #fff;
 }
