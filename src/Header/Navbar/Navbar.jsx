@@ -21,9 +21,9 @@ const Navbar = () => {
   };
 
   const menuVariants = {
-    hidden: { x: '100%' },
-    visible: { x: 0, transition: { duration: 0.3, ease: 'easeInOut' } },
-    exit: { x: '100%', transition: { duration: 0.2, ease: 'easeInOut' } },
+    hidden: { opacity: 0, x: 1000 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    exit: { opacity: 1, x: -1000, transition: { duration: .5 } },
   };
 
   const top = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
   const isActiveLink = (path) => path === location.pathname;
 
   return (
-    <nav className="bg-gradient-to-r opacity-50 from-gray-800 via-gray-700 to-gray-600 dark:bg-black dark:text-white text-gray-200 p-2 border-b border-cyan-400">
+    <nav className="bg-gradient-to-r opacity-70 from-gray-800 via-gray-700 to-gray-600 dark:bg-black dark:text-white text-gray-200 p-2 border-b border-cyan-400">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="/"
