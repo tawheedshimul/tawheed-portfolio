@@ -42,7 +42,7 @@ const Navbar = () => {
   const isActiveLink = (path) => path === location.pathname;
 
   return (
-    <nav className="bg-gradient-to-r opacity-70 from-gray-800 via-gray-700 to-gray-600 dark:bg-black dark:text-white text-gray-200 p-2 border-b border-cyan-400">
+    <nav className="bg-gradient-to-r opacity-70  dark:bg-black dark:text-white text-gray-200 p-2 border-b border-cyan-400">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="/"
