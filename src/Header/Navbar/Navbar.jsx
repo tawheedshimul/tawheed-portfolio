@@ -109,7 +109,7 @@ const Navbar = () => {
                     key={link.to}
                     onClick={closeNavbar}
                     to={link.to}
-                    className={`text-xl ${isActiveLink(link.to) ? 'text-cyan-600 bg-green-100' : ''}`}
+                    className={`text-xl mx-2 p-1 rounded  w-32 ${isActiveLink(link.to) ? 'text-cyan-600' : 'px-4'}`}
                   >
                     <span className='mx-4'>{link.text}</span>
                   </Link>
