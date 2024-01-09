@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaYoutube } from 'react-icons/fa';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
@@ -42,7 +42,7 @@ const Navbar = () => {
   const isActiveLink = (path) => path === location.pathname;
 
   return (
-    <nav className="bg-gradient-to-r opacity-70  dark:bg-black dark:text-white text-gray-200 p-2 border-b border-cyan-400">
+    <nav className="bg-gradient-to-r opacity-70 bg-black dark:text-white text-gray-200 p-2 border-b border-cyan-400">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="/"
@@ -66,12 +66,9 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="flex">
+        <div className="flex text-2xl  items-center">
           <Link to='/player'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 100 100">
-              <rect x="0" y="7" rx="10" ry="100" width="120" height="80" fill="red" />
-              <polygon points="35,20 35,70 75,46" fill="white" />
-            </svg>
+            < FaYoutube/>
           </Link>
           <div className="md:hidden">
             <button onClick={toggleNavbar} className="text-gray-100 rounded p-2 text-xl focus:outline-none">
