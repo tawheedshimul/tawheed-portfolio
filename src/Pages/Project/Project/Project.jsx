@@ -1,76 +1,114 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'
 
-function CardList() {
-    // State to store data fetched from the API
-    const [cards, setCards] = useState([]);
-
-    // Simulate fetching data from an API using useEffect
-    useEffect(() => {
-        // Replace this with your actual API endpoint
-        fetch('project.json')
-            .then((response) => response.json())
-            .then((data) => setCards(data))
-            .catch((error) => console.error('Error fetching data:', error));
-    }, []);
-
+function Project() {
     return (
-        <section className="flex flex-col justify-center dark:bg-black dark:text-white max-w-6xl min-h-screen px-4 py-10 mx-auto sm:px-6">
-            <div className="flex flex-wrap items-center justify-between mb-8">
-                <h2 className="mr-10 text-4xl font-bold leading-none md:text-5xl">
-                    Continually Scale Results
-                </h2>
-                <a
-                    href="#"
-                    className="block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600"
-                >
+        <div>
+            {/* // project 1 */}
+            <div className="relative z-20 flex items-center overflow-hidden bg-white dark:bg-gray-800">
+                <div className="container relative flex justify-between  py-16 px-4 mx-auto">
+                    <div className="relative z-20 flex flex-col lg:w-2/5">
+                        <span className="w-20 h-8 rounded dark text-white text-xl mb-12 bg-cyan-400"> Project 1
+                        </span>
+                        <h1 className="flex flex-col text-6xl font-black leading-none text-gray-800 uppercase font-bebas-neue  dark:text-white">
+                            Be on
+                            <span className="text-4xl sm:text-4xl">
+                                Time
+                            </span>
+                        </h1>
+                        <p className="text-sm text-gray-700 sm:text-base dark:text-white">
+                            Dimension of reality that makes change possible and understandable. An indefinite and homogeneous environment in which natural events and human existence take place.
+                        </p>
 
-                </a>
-            </div>
+                        <div className="relative sm:hidden mt-10">
+                            <img src="https://source.unsplash.com/1000x600/?nature" alt="Unsplash" />
+                        </div>
 
-            <div className="flex flex-wrap -mx-4 ">
-                {cards.map((card, index) => (
-                    <div
-                        key={index}
-                        className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col"
-                    >
-                        <img
-                            src={card.imageUrl}
-                            alt={`Card ${index} img`}
-                            className="object-cover object-center w-full h-48"
-                        />
-                        <div className="flex flex-grow">
-                            <div className="triangle"></div>
-                            <div className="flex flex-col justify-between px-4 py-6  border border-gray-400 dark:border-white">
-                                <div>
-                                    <a
-                                        href="#"
-                                        className="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-blue-600 hover:text-cyan-400"
-                                    >
-                                        {card.category}
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-cyan-400"
-                                    >
-                                        {card.title}
-                                    </a>
-                                    <p className="mb-4">{card.description}</p>
-                                </div>
-                                <div>
-                                    <a
-                                        href="#"
-                                        className="inline-block pb-1 mt-2 text-base  font-black text-white bg-gray-600 px-2 rounded dark:text-gray-600 dark:bg-white uppercase border-b border-transparent hover:border-blue-600"
-                                    >
-                                        See More
-                                    </a>
-                                </div>
-                            </div>
+                        <div className="flex mt-8">
+                            <a href="#" className="px-4 py-2 mr-4 text-white uppercase bg-pink-500 border-2 border-transparent rounded-lg text-md hover:bg-pink-400">
+                                Get started
+                            </a>
+                            <a href="#" className="px-4 py-2 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-md">
+                                Read more
+                            </a>
                         </div>
                     </div>
-                ))}
+                    <div className="relative hidden sm:block">
+                        <img src="https://source.unsplash.com/800x600/?nature" alt="Unsplash" className="w-[600px] h-[400px] m-auto" />
+                    </div>
+                </div>
             </div>
-        </section>
-    );
+
+            {/* // project 2  */}
+            <div className="relative z-20 flex items-center overflow-hidden bg-white dark:bg-gray-800">
+                <div className="container relative flex justify-between  py-16 px-4 mx-auto">
+                    <div className="relative z-20 flex flex-col lg:w-2/5">
+                        <span className="w-20 h-8 rounded dark text-white text-xl mb-12 bg-cyan-400"> Project 2
+                        </span>
+                        <h1 className="flex flex-col text-6xl font-black leading-none text-gray-800 uppercase font-bebas-neue  dark:text-white">
+                            Be on
+                            <span className="text-4xl sm:text-4xl">
+                                Time
+                            </span>
+                        </h1>
+                        <p className="text-sm text-gray-700 sm:text-base dark:text-white">
+                            Dimension of reality that makes change possible and understandable. An indefinite and homogeneous environment in which natural events and human existence take place.
+                        </p>
+
+                        <div className="relative sm:hidden mt-10">
+                            <img src="https://source.unsplash.com/1000x600/?nature" alt="Unsplash" />
+                        </div>
+
+                        <div className="flex mt-8">
+                            <a href="#" className="px-4 py-2 mr-4 text-white uppercase bg-pink-500 border-2 border-transparent rounded-lg text-md hover:bg-pink-400">
+                                Get started
+                            </a>
+                            <a href="#" className="px-4 py-2 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-md">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                    <div className="relative hidden sm:block">
+                        <img src="https://source.unsplash.com/800x600/?nature" alt="Unsplash" className="w-[600px] h-[400px] m-auto" />
+                    </div>
+                </div>
+            </div>
+            {/* // project 3  */}
+            <div className="relative z-20 flex items-center overflow-hidden bg-white dark:bg-gray-800">
+                <div className="container relative flex justify-between  py-16 px-4 mx-auto">
+                    <div className="relative z-20 flex flex-col lg:w-2/5">
+                        <span className="w-20 h-8 rounded dark text-white text-xl mb-12 bg-cyan-400"> Project 3
+                        </span>
+                        <h1 className="flex flex-col text-6xl font-black leading-none text-gray-800 uppercase font-bebas-neue  dark:text-white">
+                            Be on
+                            <span className="text-4xl sm:text-4xl">
+                                Time
+                            </span>
+                        </h1>
+                        <p className="text-sm text-gray-700 sm:text-base dark:text-white">
+                            Dimension of reality that makes change possible and understandable. An indefinite and homogeneous environment in which natural events and human existence take place.
+                        </p>
+
+                        <div className="relative sm:hidden mt-10">
+                            <img src="https://source.unsplash.com/1000x600/?nature" alt="Unsplash" />
+                        </div>
+
+                        <div className="flex mt-8">
+                            <a href="#" className="px-4 py-2 mr-4 text-white uppercase bg-pink-500 border-2 border-transparent rounded-lg text-md hover:bg-pink-400">
+                                Get started
+                            </a>
+                            <a href="#" className="px-4 py-2 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-md">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
+                    <div className="relative hidden sm:block">
+                        <img src="https://source.unsplash.com/800x600/?nature" alt="Unsplash" className="w-[600px] h-[400px] m-auto" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    )
 }
 
-export default CardList;
+export default Project;
