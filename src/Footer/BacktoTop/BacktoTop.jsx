@@ -25,7 +25,7 @@ const BacktoTop = () => {
 
     return (
         <button
-            className={`fixed bottom-4 z-50 right-4 bg-cyan-500  dark:bg-rose-500 text-white px-4 py-4 rounded-full ${isVisible ? 'block' : 'hidden'}`}
+            className={`fixed bottom-2 z-50 right-4 bg-cyan-500  dark:bg-rose-500 text-white px-4 py-4 rounded-full ${isVisible ? 'block' : 'hidden'}`}
             onClick={scrollToTop}
         >
             <HiArrowSmallUp></HiArrowSmallUp>
