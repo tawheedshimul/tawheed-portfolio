@@ -42,11 +42,11 @@ const Navbar = () => {
   const isActiveLink = (path) => path === location.pathname;
 
   return (
-    <nav className="bg-gradient-to-r opacity-70 bg-black dark:text-white text-gray-200 p-2 border-b border-cyan-400">
+    <nav className="bg-gray-200 dark:bg-black dark:text-white text-black p-2 border-b border-cyan-400">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="/"
-          className="glow-button flex space-x-1 py-2 hover:text-white text-xl font-semibold rounded px-8 transition duration-300 transform hover:scale-105"
+          className="glow-button flex space-x-1 py-2 dark:text-white  text-xl font-semibold rounded px-8 transition duration-300 transform hover:scale-105"
           onClick={closeNavbar}
           activeClassName="active"
         >
@@ -59,7 +59,7 @@ const Navbar = () => {
               key={link.to}
               onClick={top}
               to={link.to}
-              className={`inline-block w-full mx-2 px-2 py-2 text-sm font-medium text-white border-b-2 border-transparent hover:border-white focus:outline-none ${isActiveLink(link.to) ? 'active' : ''}`}
+              className={`inline-block w-full mx-2 px-2 py-2 text-sm font-medium text-black dark:text-white border-b-2 border-transparent hover:border-white focus:outline-none ${isActiveLink(link.to) ? 'active' : ''}`}
             >
               <span className='mx-2'>{link.text}</span>
             </NavLink>

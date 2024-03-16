@@ -10,8 +10,9 @@ const Main = () => {
             <div className='fixed top-0 w-full z-40'>
                 <Navbar></Navbar>
             </div>
-            <div>
-                <Outlet></Outlet>
+            <Outlet></Outlet>
+            <div className='fixed bottom-0 w-full'>
+                
                 <Footer></Footer>
             </div>
         </div>
