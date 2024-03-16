@@ -71,7 +71,7 @@ const Navbar = () => {
             < FaYoutube/>
           </Link>
           <div className="md:hidden">
-            <button onClick={toggleNavbar} className="text-gray-100 rounded p-2 text-xl focus:outline-none">
+            <button onClick={toggleNavbar} className="dark:text-gray-100 text-black rounded p-2 text-xl focus:outline-none">
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
