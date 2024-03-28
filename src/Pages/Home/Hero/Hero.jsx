@@ -24,7 +24,7 @@ const Hero = () => {
                         <div className="relative w-full h-full">
 
                             <img src={atom} className="object-right w-[500px] object-cover animate-spin h-[500px] relative hidden lg:block" />
-                            <img src={atom} className="h-[300px] mx-auto  animate-spin lg:hidden dark:brightness-50" />
+                            <img src={atom} className="h-[200px] mx-auto  animate-spin lg:hidden dark:brightness-50" />
                             <div className="hidden lg:block absolute bottom-0 right-0 bg-red-200 w-1/2">
                                 <Link to='/about' className="dark:hover:bg-gray-800 dark:bg-white dark:hover:text-gray-50 dark:text-gray-800 bg-gray-800 text-xl xl:text-2xl font-medium text-white flex justify-between w-full items-center p-5 xl:p-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
                                     Know More About Me...
