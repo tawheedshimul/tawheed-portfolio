@@ -4,56 +4,56 @@ import { FaBars, FaTimes, FaYoutube } from 'react-icons/fa';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
-const links = [
-  { to: '/', text: 'Home' },
-  { to: '/about', text: 'About' },
-  { to: '/contact', text: 'Contact' },
-  { to: '/service', text: 'Services' },
-  { to: '/projects', text: 'Project' },
-];
+// const links = [
+//   { to: '/', text: 'Home' },
+//   { to: '/about', text: 'About' },
+//   { to: '/contact', text: 'Contact' },
+//   { to: '/service', text: 'Services' },
+//   { to: '/projects', text: 'Project' },
+// ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
+  // const location = useLocation();
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleNavbar = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
-  const menuVariants = {
-    hidden: { opacity: 0, x: 1000 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.1 } },
-    exit: { opacity: 1, x: -1000, transition: { duration: .4 } },
-  };
+  // const menuVariants = {
+  //   hidden: { opacity: 0, x: 1000 },
+  //   visible: { opacity: 1, x: 0, transition: { duration: 0.1 } },
+  //   exit: { opacity: 1, x: -1000, transition: { duration: .4 } },
+  // };
 
-  const top = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  // const top = () => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
 
   const closeNavbar = () => {
     setIsOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const closeNav = () => {
-    setIsOpen(false);
-  };
+  // const closeNav = () => {
+  //   setIsOpen(false);
+  // };
 
-  const isActiveLink = (path) => path === location.pathname;
+  // const isActiveLink = (path) => path === location.pathname;
 
   return (
-    <nav className="bg-gray-200 dark:bg-black dark:text-white text-black p-2 border-b border-cyan-400">
+    <nav className="bg-black p-2 border-b border-red-600">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="/"
-          className="glow-button flex space-x-1 py-2 dark:text-white  text-xl font-semibold rounded px-8 transition duration-300 transform hover:scale-105"
+          className="glow-button font-semibold flex space-x-1 px-3 py-2 text-red-600  text-xl  transition duration-300 transform"
           onClick={closeNavbar}
           activeClassName="active"
         >
           <p>Tawheed</p>
         </Link>
 
-        <div className="hidden md:flex space-x-4">
+        {/* <div className="hidden md:flex space-x-4">
           {links.map((link) => (
             <NavLink
               key={link.to}
@@ -64,21 +64,21 @@ const Navbar = () => {
               <span className='mx-2'>{link.text}</span>
             </NavLink>
           ))}
-        </div>
+        </div> */}
 
-        <div className="flex text-2xl  items-center">
+        <div className="flex text-2xl text-red-600  items-center">
           <Link to='/player'>
             < FaYoutube/>
           </Link>
-          <div className="md:hidden">
+          {/* <div className="md:hidden">
             <button onClick={toggleNavbar} className="dark:text-gray-100 text-black rounded p-2 text-xl focus:outline-none">
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isOpen && (
           <>
             <motion.div
@@ -115,7 +115,7 @@ const Navbar = () => {
             </motion.div>
           </>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </nav>
   );
 };

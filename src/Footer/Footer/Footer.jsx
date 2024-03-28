@@ -1,62 +1,36 @@
 import React from 'react';
-import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import { HiHome } from 'react-icons/hi2';
 import BacktoTop from '../BacktoTop/BacktoTop';
+import { SiAboutdotme } from "react-icons/si";
+import { FaBlenderPhone } from "react-icons/fa";
+import { MdConstruction } from "react-icons/md";
+import { FaProjectDiagram } from 'react-icons/fa';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const location = useLocation();
 
   return (
-    <footer className="bg-gray-200 dark:bg-black py-4 border-t border-cyan-400">
-      <BacktoTop></BacktoTop>
-
+    <footer className="bg-gray-200 dark:bg-black py-4 border-t border-red-600">
+      <BacktoTop/>
       {/* div 1  */}
-      <div className="container mx-auto flex justify-center items-center">
-        <div className="mr-6">
-          <a
-            href="https://www.facebook.com/tawheedshimul"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-800 dark:text-white hover:text-blue-600 transition duration-300"
-          >
-            <FaFacebookSquare size={32} />
-          </a>
-        </div>
-        <div className="mr-6">
-          <a
-            href="https://twitter.com/tawheedshimul"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-800 dark:text-white hover:text-cyan-500 transition duration-300"
-          >
-            <FaTwitterSquare size={32} />
-          </a>
-        </div>
-        <div className="mr-6">
-          <a
-            href="https://www.linkedin.com/tawheedshimul"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-800 dark:text-white hover:text-green-800 transition duration-300"
-          >
-            <FaLinkedin size={32} />
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://github.com/tawheedshimul"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-800 dark:text-white hover:text-gray-500 transition duration-300"
-          >
-            <FaGithubSquare size={32} />
-          </a>
-        </div>
+      <div className="container mx-auto flex px-2 justify-between items-center">
+        <Link to="/" style={{ color: location.pathname === '/' ? '#f00' : '#fff' }}>
+          <HiHome className="text-3xl" />
+        </Link>
+        <Link to='/about' style={{ color: location.pathname === '/about' ? '#f00' : '#fff' }}>
+          <SiAboutdotme className="text-3xl" />
+        </Link>
+        <Link to='/contact' style={{ color: location.pathname === '/contact' ? '#f00' : '#fff' }}>
+          <FaBlenderPhone className="text-3xl" />
+        </Link>
+        <Link to='/service' style={{ color: location.pathname === '/service' ? '#f00' : '#fff' }}>
+          <MdConstruction className="text-3xl" />
+        </Link>
+        <Link to='/projects' style={{ color: location.pathname === '/projects' ? '#f00' : '#fff' }}>
+          <FaProjectDiagram className="text-3xl" />
+        </Link>
       </div>
-      {/* <div className="text-center mt-4">
-        <p className="text-gray-800 dark:text-white text-sm">
-          &copy; 2022 - {currentYear} All rights reserved.
-        </p>
-      </div> */}
     </footer>
   );
 };

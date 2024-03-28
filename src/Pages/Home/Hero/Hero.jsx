@@ -1,10 +1,11 @@
 import React from "react";
 import TypewriterEffect from "../TypewriterEffect/TypewriterEffect";
 import { Link } from "react-router-dom";
+import atom from '../../../../public/atom.png'
 
 const Hero = () => {
     return (
-        <div className="dark:bg-gray-900">
+        <div style={{ backgroundImage: "url('https://i.ibb.co/dk2pbZK/823985479947.jpg')" }} className="bg-cover">
             <div className="container mx-auto py-14">
                 <div className="flex flex-col lg:flex-row justify-center items-strech mx-4">
                     <div className="lg:w-4/12 flex justify-center items-center">
@@ -21,8 +22,9 @@ const Hero = () => {
                     </div>
                     <div className="lg:w-8/12 mt-6 md:mt-8 lg:mt-0">
                         <div className="relative w-full h-full">
-                            <img src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147851367.jpg?w=740&t=st=1694940597~exp=1694941197~hmac=8318b62f352a4e72ba89018a4b229fcfc7c393cd793719d0c12b8a5a126a0b26" alt="A lounge sofa" className="object-right w-full object-none h-[500px] relative hidden lg:block" />
-                            <img src="https://img.freepik.com/free-vector/operating-system-concept-illustration_114360-1915.jpg?w=740&t=st=1694941154~exp=1694941754~hmac=8d67d5bdf20b5b44b7dcae16a31201d44717c2a519f695a2eadde90e745fbcb1" alt="A lounge sofa" className="w-full h-full lg:hidden dark:brightness-50" />
+
+                            <img src={atom} className="object-right w-[500px] object-cover animate-spin h-[500px] relative hidden lg:block" />
+                            <img src={atom} className="h-[300px] mx-auto  animate-spin lg:hidden dark:brightness-50" />
                             <div className="hidden lg:block absolute bottom-0 right-0 bg-red-200 w-1/2">
                                 <Link to='/about' className="dark:hover:bg-gray-800 dark:bg-white dark:hover:text-gray-50 dark:text-gray-800 bg-gray-800 text-xl xl:text-2xl font-medium text-white flex justify-between w-full items-center p-5 xl:p-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
                                     Know More About Me...
