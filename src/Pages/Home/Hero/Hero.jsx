@@ -5,17 +5,17 @@ import atom from '../../../../public/atom.png'
 
 const Hero = () => {
     return (
-        <div style={{ backgroundImage: "url('https://i.ibb.co/dk2pbZK/823985479947.jpg')" }} className="bg-cover">
+        <div  >
             <div className="container mx-auto py-14">
                 <div className="flex flex-col lg:flex-row justify-center items-strech mx-4">
                     <div className="lg:w-4/12 flex justify-center items-center">
                         <div>
-                            <h1 className="dark:text-white text-4xl md:text-5xl xl:text-6xl h-8 w-full font-semibold text-gray-900 w-7/12"><TypewriterEffect></TypewriterEffect></h1>
-                            <p className="dark:text-gray-300 font-serif text-justify md:container lg:w-11/12 xl:w-10/12 mt-4 lg:mt-5 text-base leading-normal text-gray-600">Hi, I'm Tawheed Shimul, a passionate web developer with over 2 years of experience. <br />
+                            <h1 className="dark:text-white text-4xl md:text-5xl xl:text-6xl h-8 w-full font-semibold text-gray-900"><TypewriterEffect></TypewriterEffect></h1>
+                            <p className="dark:text-gray-300 font-serif text-justify md:container lg:w-11/12 xl:w-10/12 mt-4 lg:mt-5 text-base leading-normal text-gray-600">Hi, I'm Tawheed Shimul, a passionate web developer with over 3 years of experience. <br />
 
                                 I specialize in front-end development and enjoy creating visually appealing and interactive user interfaces.
                                 <br />
-                                My skills include HTML, CSS, JavaScript, and various front-end frameworks like React and Vue.js.
+                                My skills include HTML, CSS, JavaScript, and various front-end frameworks like React and Next.js.
                                 <br />
                                 I am dedicated to delivering high-quality website</p>
                         </div>

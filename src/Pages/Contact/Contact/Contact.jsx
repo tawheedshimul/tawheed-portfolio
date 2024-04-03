@@ -39,9 +39,9 @@ const Contact = () => {
     };
 
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center mx-auto bg-gray-100">
-            <div className="bg-white dark:bg-black dark:text-white p-8 rounded shadow-lg w-full">
-                <h1 className="text-3xl text-center text-white rounded bg-cyan-400 py-2 font-semibold mb-4">Contact Me</h1>
+        <div className="min-h-screen flex flex-col justify-center items-center mx-auto ">
+            <div className="mb-16 p-2 rounded shadow-lg w-full">
+                <h1 className="text-3xl text-center text-white rounded bg-red-400 py-2 font-semibold mb-4">Contact Me</h1>
 
                 <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <motion.div className="card rounded shadow-lg"
@@ -49,14 +49,14 @@ const Contact = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <div className="card-header px-4 rounded-t py-3 bg-gray-200 dark:bg-gray-700">
-                            <h2 className="text-xl font-semibold">Contact Information</h2>
+                        <div className="card-header px-4 rounded-t py-3 bg-red-400">
+                            <h2 className="text-xl font-semibold text-white">Contact Information</h2>
                         </div>
-                        <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
+                        <div className="card-body dark:bg-red-200 rounded-b px-4 py-3">
                             <ul className="flex flex-col space-y-2">
                                 <li className="flex items-center">
                                     <FaEnvelope className="text-gray-600 dark:text-gray-100 mr-2" />
-                                    <span className="text-gray-700 dark:text-gray-200">Email: tawheedshimul@gmail.com</span>
+                                    <span className="text-red-900">Email: tawheedshimul@gmail.com</span>
                                 </li>
                                 <li className="flex items-center">
                                     <FaPhone className="text-gray-600 dark:text-gray-100 mr-2" />
