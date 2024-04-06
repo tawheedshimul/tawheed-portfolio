@@ -23,10 +23,10 @@ function UserProfile() {
   };
 
   return (
-    <div className="bg-white dark:bg-black dark:text-white rounded-t-lg shadow-xl pb-8">
+    <div className=" rounded-t-lg shadow-xl pb-8">
       <div className="w-full h-[250px]">
         <img
-          src="https://vojislavd.com/ta-template-demo/assets/img/profile-background.jpg"
+          src="https://i.ibb.co/dk2pbZK/823985479947.jpg"
           className="w-full h-full rounded-tl-lg rounded-tr-lg"
           alt="Profile Background"
           onError={(e) => {
@@ -42,13 +42,13 @@ function UserProfile() {
           alt="Profile"
         />
         <div className="flex items-center space-x-2 mt-2">
-          <p className="text-2xl">Md Tawheed Shimul</p>
-          <span className="bg-cyan-400 rounded-full p-1" title="Verified">
+          <p className="text-2xl text-white">Md Tawheed Shimul</p>
+          <span className="bg-red-500 rounded-full p-1" title="Verified">
             <FaCheckCircle className="text-gray-100 h-6 w-6" />
           </span>
         </div>
-        <p className="text-gray-700 dark:text-white">Junior React Web Developer</p>
-        <p className="text-sm text-gray-500 dark:text-gray-100">Kushtia, Bangladesh</p>
+        <p className="text-white">Junior React Web Developer</p>
+        <p className="text-sm text-white">Kushtia, Bangladesh</p>
       </div>
       <div className="flex-1 flex flex-col items-center lg:items-end justify-end px-8 mt-2">
         <div className="flex items-center space-x-4 mt-2">

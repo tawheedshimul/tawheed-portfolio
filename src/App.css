@@ -2,7 +2,31 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url('https://i.ibb.co/dk2pbZK/823985479947.jpg');
+  /* background-image: url('https://i.ibb.co/dk2pbZK/823985479947.jpg');
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  height: 100vh;
+  background-color: black;
+  animation: color-change 5s infinite alternate;
+}
+
+
+
+.animated-background {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  animation: color-change 5s infinite alternate;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #000000;
+  }
+  50% {
+    background-color: #121212;
+  }
+  100% {
+    background-color: #0f0f0f;
+  }
 }

@@ -27,7 +27,7 @@ const ServicesDynamic = () => {
     const { description, role, image, skills } = service;
 
     return (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center pb-16 items-center">
             <div className="bg-white dark:bg-black dark:text-white border dark:border-gray-300 shadow-md rounded-lg container mx-auto">
                 <img src={image} alt={role} className="w-full h-full  object-cover" />
                 <div className="p-4">

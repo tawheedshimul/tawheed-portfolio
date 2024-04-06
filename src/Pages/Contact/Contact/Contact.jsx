@@ -39,9 +39,9 @@ const Contact = () => {
     };
 
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center mx-auto ">
+        <div className="min-h-screen flex flex-col justify-center items-center mx-auto text-white">
             <div className="mb-16 p-2 rounded shadow-lg w-full">
-                <h1 className="text-3xl text-center text-white rounded bg-red-400 py-2 font-semibold mb-4">Contact Me</h1>
+                <h1 className="text-3xl text-center rounded bg-gray-200 text-black py-2 font-semibold mb-4">Contact Me</h1>
 
                 <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <motion.div className="card rounded shadow-lg"
@@ -49,22 +49,22 @@ const Contact = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <div className="card-header px-4 rounded-t py-3 bg-red-400">
-                            <h2 className="text-xl font-semibold text-white">Contact Information</h2>
+                        <div className="card-header px-4 rounded-t py-3 bg-black">
+                            <h2 className="text-xl font-semibold">Contact Information</h2>
                         </div>
-                        <div className="card-body dark:bg-red-200 rounded-b px-4 py-3">
+                        <div className="card-body bg-white rounded-b px-4 py-3">
                             <ul className="flex flex-col space-y-2">
                                 <li className="flex items-center">
-                                    <FaEnvelope className="text-gray-600 dark:text-gray-100 mr-2" />
-                                    <span className="text-red-900">Email: tawheedshimul@gmail.com</span>
+                                    <FaEnvelope className="text-gray-600 mr-2" />
+                                    <span className="text-black">Email: tawheedshimul@gmail.com</span>
                                 </li>
                                 <li className="flex items-center">
-                                    <FaPhone className="text-gray-600 dark:text-gray-100 mr-2" />
-                                    <span className="text-gray-700 dark:text-gray-200">Phone: (+88) 01811-861331</span>
+                                    <FaPhone className="text-gray-600 mr-2" />
+                                    <span className="text-black">Phone: (+88) 01811-861331</span>
                                 </li>
                                 <li className="flex items-center">
-                                    <FaMapMarker className="text-gray-600 dark:text-gray-100 mr-2" />
-                                    <span className="text-gray-700 dark:text-gray-200">Location: Kushtia, Bangladesh</span>
+                                    <FaMapMarker className="text-gray-600 mr-2" />
+                                    <span className="text-black">Location: Kushtia, Bangladesh</span>
                                 </li>
                             </ul>
                         </div>
@@ -75,17 +75,17 @@ const Contact = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <div className="card-header px-4 rounded-t py-3 bg-gray-200 dark:bg-gray-700">
+                        <div className="card-header px-4 rounded-t py-3 bg-black">
                             <h2 className="text-xl font-semibold">Contact Form</h2>
                         </div>
-                        <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
+                        <div className="card-body bg-white rounded-b px-4 py-3">
                             <form ref={form} onSubmit={sendEmail}>
                                 <div className="mb-4">
-                                    <label className="block text-gray-600 dark:text-gray-100 font-semibold mb-2" htmlFor="name">
+                                    <label className="block text-gray-600 font-semibold mb-2" htmlFor="name">
                                         Your Name
                                     </label>
                                     <input
-                                        className="border border-gray-300 dark:text-black rounded w-full py-2 px-3"
+                                        className="border border-gray-300 rounded w-full py-2 px-3"
                                         type="text"
                                         id="name"
                                         placeholder="John Doe"
@@ -94,11 +94,11 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="mb-4">
-                                    <label className="block text-gray-600 dark:text-gray-100 font-semibold mb-2" htmlFor="email">
+                                    <label className="block text-gray-600 font-semibold mb-2" htmlFor="email">
                                         Your Email
                                     </label>
                                     <input
-                                        className="border border-gray-300 dark:text-black rounded w-full py-2 px-3"
+                                        className="border border-gray-300 rounded w-full py-2 px-3"
                                         type="email"
                                         id="email"
                                         name="user_email"
@@ -107,11 +107,11 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="mb-4">
-                                    <label className="block text-gray-600 dark:text-gray-100 font-semibold mb-2" htmlFor="message">
+                                    <label className="block text-gray-600 font-semibold mb-2" htmlFor="message">
                                         Message
                                     </label>
                                     <textarea
-                                        className="border border-gray-300 dark:text-black rounded w-full py-2 px-3 h-32 resize-none"
+                                        className="border text-black border-gray-300 rounded w-full py-2 px-3 h-32 resize-none"
                                         id="message"
                                         name="message"
                                         placeholder="Type your message here..."
@@ -119,7 +119,7 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="text-center">
-                                    <input onClick={handleClick} className="bg-gray-500 cursor-pointer dark:bg-gray-100 dark:text-gray-800 text-white  py-2 px-4 rounded transition duration-300" type="submit" value={isClicked ? 'SUBMITTING' : 'SUBMIT'} />
+                                    <input onClick={handleClick} className="bg-gray-600 cursor-pointer text-white  py-2 px-4 rounded transition duration-300" type="submit" value={isClicked ? 'SUBMITTING' : 'SUBMIT'} />
                                 </div>
                             </form>
                         </div>
@@ -132,8 +132,8 @@ const Contact = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <h2 className="card-header px-4 rounded-t py-3 bg-gray-200 dark:bg-gray-700 text-xl font-semibold mb-2">My Location</h2>
-                        <div className="card-body dark:bg-gray-500 rounded-b px-4 py-3">
+                        <h2 className="card-header px-4 rounded-t py-3 bg-black text-xl font-semibold mb-2">My Location</h2>
+                        <div className="card-body bg-white rounded-b px-4 py-3">
                             <p className="mb-4">You can find me here. Feel free to reach out or stop by for a coffee.</p>
                             <div className="rounded-lg overflow-hidden">
                                 {/* Placeholder for Google Maps */}
