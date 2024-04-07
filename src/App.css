@@ -53,13 +53,13 @@ body {
 
 @keyframes pulse {
   0% {
-    width: 130%;
-    height: 130%;
+    width: 150%;
+    height: 150%;
     opacity: 1;
   }
   100% {
-    width: 150%;
-    height: 150%;
+    width: 170%;
+    height: 170%;
     opacity: 0;
   }
 }

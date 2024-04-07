@@ -1,124 +1,115 @@
-// import React from 'react'
+// ProjectShowcase.js
 
-// function Project() {
-//     return (
-//         <div>
-//             {/* // project 1 */}
-//             <div className="relative mb-96 flex items-center overflow-hidden bg-white dark:bg-gray-800">
-//                 <div className="container relative flex justify-between  py-16 px-4 mx-auto">
-//                     <div className="relative z-20 flex flex-col lg:w-2/5">
-//                         <span className="w-20 h-8 rounded dark text-white text-xl mb-12 bg-cyan-400"> Project 1
-//                         </span>
-//                         <h1 className="flex flex-col text-6xl font-black leading-none text-gray-800 uppercase font-bebas-neue  dark:text-white">
-//                             Be on
-//                             <span className="text-4xl sm:text-4xl">
-//                                 Time
-//                             </span>
-//                         </h1>
-//                         <p className="text-sm text-gray-700 sm:text-base dark:text-white">
-//                             Dimension of reality that makes change possible and understandable. An indefinite and homogeneous environment in which natural events and human existence take place.
-//                         </p>
+import React, { useState } from 'react';
+import Modal from './Modal';
 
-//                         <div className="relative sm:hidden mt-10">
-//                             <img src="https://source.unsplash.com/1000x600/?nature" alt="Unsplash" />
-//                         </div>
+const projects = [
+  {
+    id: 1,
+    title: 'Project 1',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis nunc vel risus convallis, nec eleifend quam consequat.',
+    imageUrl: 'https://via.placeholder.com/300',
+    githubUrl: '#',
+    liveDemoUrl: '#',
+  },
+  {
+    id: 2,
+    title: 'Project 2',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis nunc vel risus convallis, nec eleifend quam consequat.',
+    imageUrl: 'https://via.placeholder.com/300',
+    githubUrl: '#',
+    liveDemoUrl: '#',
+  },
+  {
+    id: 3,
+    title: 'Project 3',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis nunc vel risus convallis, nec eleifend quam consequat.',
+    imageUrl: 'https://via.placeholder.com/300',
+    githubUrl: '#',
+    liveDemoUrl: '#',
+  },
+  {
+    id: 3,
+    title: 'Project 3',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis nunc vel risus convallis, nec eleifend quam consequat.',
+    imageUrl: 'https://via.placeholder.com/300',
+    githubUrl: '#',
+    liveDemoUrl: '#',
+  },
+  {
+    id: 3,
+    title: 'Project 3',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis nunc vel risus convallis, nec eleifend quam consequat.',
+    imageUrl: 'https://via.placeholder.com/300',
+    githubUrl: '#',
+    liveDemoUrl: '#',
+  },
+  {
+    id: 3,
+    title: 'Project 3',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis nunc vel risus convallis, nec eleifend quam consequat.',
+    imageUrl: 'https://via.placeholder.com/300',
+    githubUrl: '#',
+    liveDemoUrl: '#',
+  },{
+    id: 3,
+    title: 'Project 3',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis nunc vel risus convallis, nec eleifend quam consequat.',
+    imageUrl: 'https://via.placeholder.com/300',
+    githubUrl: '#',
+    liveDemoUrl: '#',
+  },
+];
 
-//                         <div className="flex mt-8">
-//                             <a href="#" className="px-4 py-2 mr-4 text-white uppercase bg-pink-500 border-2 border-transparent rounded-lg text-md hover:bg-pink-400">
-//                                 Get started
-//                             </a>
-//                             <a href="#" className="px-4 py-2 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-md">
-//                                 Read more
-//                             </a>
-//                         </div>
-//                     </div>
-//                     <div className="relative hidden sm:block">
-//                         <img src="https://source.unsplash.com/800x600/?nature" alt="Unsplash" className="w-[600px] h-[400px] m-auto" />
-//                     </div>
-//                 </div>
-//             </div>
+const ProjectShowcase = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-//             {/* // project 2  */}
-//             <div className="relative z-20 flex items-center overflow-hidden bg-white dark:bg-gray-800">
-//                 <div className="container relative flex justify-between  py-16 px-4 mx-auto">
-//                     <div className="relative z-20 flex flex-col lg:w-2/5">
-//                         <span className="w-20 h-8 rounded dark text-white text-xl mb-12 bg-cyan-400"> Project 2
-//                         </span>
-//                         <h1 className="flex flex-col text-6xl font-black leading-none text-gray-800 uppercase font-bebas-neue  dark:text-white">
-//                             Be on
-//                             <span className="text-4xl sm:text-4xl">
-//                                 Time
-//                             </span>
-//                         </h1>
-//                         <p className="text-sm text-gray-700 sm:text-base dark:text-white">
-//                             Dimension of reality that makes change possible and understandable. An indefinite and homogeneous environment in which natural events and human existence take place.
-//                         </p>
+  const openModal = (projectId) => {
+    const project = projects.find((project) => project.id === projectId);
+    setSelectedProject(project);
+    setModalOpen(true);
+  };
 
-//                         <div className="relative sm:hidden mt-10">
-//                             <img src="https://source.unsplash.com/1000x600/?nature" alt="Unsplash" />
-//                         </div>
+  const closeModal = () => {
+    setModalOpen(false);
+    setSelectedProject(null);
+  };
 
-//                         <div className="flex mt-8">
-//                             <a href="#" className="px-4 py-2 mr-4 text-white uppercase bg-pink-500 border-2 border-transparent rounded-lg text-md hover:bg-pink-400">
-//                                 Get started
-//                             </a>
-//                             <a href="#" className="px-4 py-2 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-md">
-//                                 Read more
-//                             </a>
-//                         </div>
-//                     </div>
-//                     <div className="relative hidden sm:block">
-//                         <img src="https://source.unsplash.com/800x600/?nature" alt="Unsplash" className="w-[600px] h-[400px] m-auto" />
-//                     </div>
-//                 </div>
-//             </div>
-//             {/* // project 3  */}
-//             <div className="relative z-20 flex items-center overflow-hidden bg-white dark:bg-gray-800">
-//                 <div className="container relative flex justify-between  py-16 px-4 mx-auto">
-//                     <div className="relative z-20 flex flex-col lg:w-2/5">
-//                         <span className="w-20 h-8 rounded dark text-white text-xl mb-12 bg-cyan-400"> Project 3
-//                         </span>
-//                         <h1 className="flex flex-col text-6xl font-black leading-none text-gray-800 uppercase font-bebas-neue  dark:text-white">
-//                             Be on
-//                             <span className="text-4xl sm:text-4xl">
-//                                 Time
-//                             </span>
-//                         </h1>
-//                         <p className="text-sm text-gray-700 sm:text-base dark:text-white">
-//                             Dimension of reality that makes change possible and understandable. An indefinite and homogeneous environment in which natural events and human existence take place.
-//                         </p>
-
-//                         <div className="relative sm:hidden mt-10">
-//                             <img src="https://source.unsplash.com/1000x600/?nature" alt="Unsplash" />
-//                         </div>
-
-//                         <div className="flex mt-8">
-//                             <a href="#" className="px-4 py-2 mr-4 text-white uppercase bg-pink-500 border-2 border-transparent rounded-lg text-md hover:bg-pink-400">
-//                                 Get started
-//                             </a>
-//                             <a href="#" className="px-4 py-2 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-md">
-//                                 Read more
-//                             </a>
-//                         </div>
-//                     </div>
-//                     <div className="relative hidden sm:block">
-//                         <img src="https://source.unsplash.com/800x600/?nature" alt="Unsplash" className="w-[600px] h-[400px] m-auto" />
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-
-//     )
-// }
-
-// export default Project;
-
-import React from 'react'
-
-function Project() {
   return (
-    <div>Project</div>
-  )
-}
+    <div className=" h-[768px] mx-auto">
+      <h1 className="text-4xl -mt-[60px] pt-48 font-bold text-center h-64 bg-gray-800 bg-opacity-50 text-white" style={{backgroundImage: `url('https://i.ibb.co/yf3Vbdn/projectbanner.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+  <span className='border-b-2 p-2 px-7 rounded bg-gray-900 bg-opacity-90'>Project Showcase</span>
+</h1>
 
-export default Project;
+      <div className="flex px-2 overflow-x-auto gap-8">
+        {projects.map((project) => (
+          <div key={project.id} className="bg-white flex-shrink-0 rounded-lg shadow-lg w-72">
+            <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
+            <div className="p-6">
+              <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
+              <p className="text-gray-700 mb-4">{project.description}</p>
+              <div className="flex justify-center">
+                <button onClick={() => openModal(project.id)} className="text-blue-500 hover:underline">View Details</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      {modalOpen && selectedProject && (
+        <Modal onClose={closeModal}>
+          <div className="text-center">
+            <h2 className="text-3xl font-bold mb-2">{selectedProject.title}</h2>
+            <p className="text-gray-700 mb-4">{selectedProject.description}</p>
+            <div className="flex justify-center space-x-4">
+              <a href={selectedProject.githubUrl} className="text-blue-500 hover:underline">GitHub</a>
+              <a href={selectedProject.liveDemoUrl} className="text-green-500 hover:underline">Live Demo</a>
+            </div>
+          </div>
+        </Modal>
+      )}
+    </div>
+  );
+};
+
+export default ProjectShowcase;

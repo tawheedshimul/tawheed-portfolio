@@ -25,11 +25,12 @@ const BacktoTop = () => {
 
     return (
         <button
-            className={`fixed bottom-16 z-50 right-4 bg-red-600 text-white px-8 py-2 rounded ${isVisible ? 'block' : 'hidden'}`}
-            onClick={scrollToTop}
-        >
-            <HiArrowSmallUp></HiArrowSmallUp>
-        </button>
+    className={`fixed bottom-16 z-50 left-1/2 transform -translate-x-1/2 bg-gray-600 bg-opacity-40 border text-white px-8 py-2 rounded ${isVisible ? 'block' : 'hidden'}`}
+    onClick={scrollToTop}
+>
+    <HiArrowSmallUp></HiArrowSmallUp>
+</button>
+
     );
 };
 

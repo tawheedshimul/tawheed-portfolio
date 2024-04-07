@@ -11,7 +11,7 @@ const Main = () => {
                 <Navbar></Navbar>
             </div>
             <Outlet></Outlet>
-            <div className='fixed bottom-0 w-full'>
+            <div className='fixed z-40 bottom-0 w-full'>
                 
                 <Footer></Footer>
             </div>
