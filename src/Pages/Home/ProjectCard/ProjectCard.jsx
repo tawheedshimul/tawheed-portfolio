@@ -12,18 +12,18 @@ function ProjectCard() {
     }, []);
 
     return (
-        <div className='dark:bg-black dark:text-white'>
-            <h2 className='text-center w-11/12 text-gray-600 text-3xl bg-gray-200 p-2 mx-auto rounded font-semibold'>
+        <div className='bg-gray-800 p-3 text-white'>
+            <h2 className='text-center  text-gray-600 text-3xl bg-gray-200 p-4 rounded font-semibold'>
                 Knowledge
             </h2>
 
             <div className='container mx-auto flex justify-center'>
-                <div className='mt-4 w-11/12 md:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4'>
+                <div className='mt-4 flex overflow-x-auto gap-4 mb-4'>
                     {mern.map((item) => (
                         <Link to={`/project/${item.id}`} key={item.id}> {/* Wrap the card in a Link */}
-                            <div className='dark:bg-gray-800 border dark:border-white dark:text-white rounded overflow-hidden shadow-lg'>
+                            <div className=' w-72 border  rounded overflow-hidden shadow-lg'>
                                 <img className='h-64 w-full' src={item.img} alt={item.title} />
-                                <div className='px-6 py-4'>
+                                <div className='px-6 py-4 bg-black bg-opacity-70'>
                                     <div className='font-bold text-xl mb-2'>{item.title}</div>
                                     <p className='text-gray-700 dark:text-white text-base'>
                                         {item.description}
