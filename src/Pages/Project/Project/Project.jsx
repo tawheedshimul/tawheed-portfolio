@@ -77,9 +77,9 @@ const ProjectShowcase = () => {
   };
 
   return (
-    <div className=" h-[768px] mx-auto">
-      <h1 className="text-4xl -mt-[60px] pt-48 font-bold text-center h-64 bg-gray-800 bg-opacity-50 text-white" style={{backgroundImage: `url('https://i.ibb.co/yf3Vbdn/projectbanner.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-  <span className='border-b-2 p-2 px-7 rounded bg-gray-900 bg-opacity-90'>Project Showcase</span>
+    <div className=" h-[805px] mx-auto">
+      <h1 className="text-4xl -mt-[60px] pt-48 font-bold text-center h-72 bg-gray-800 bg-opacity-50 text-white" style={{backgroundImage: `url('https://i.ibb.co/yf3Vbdn/projectbanner.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+  <span className='border-b-2 p-2 px-7 rounded fixed top-16 left-1/2 -translate-x-1/2 bg-gray-900 bg-opacity-90'>Project Showcase</span>
 </h1>
 
       <div className="flex px-2 overflow-x-auto gap-8">
