@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
@@ -16,7 +17,7 @@ const Banner = () => {
             <p>
                 I SPECIALIZE IN NEXT AND REACT JS. I'LL BUILD FOR YOU HIGH QUALITY WEBSITE.
             </p>
-            <button className='bg-gray-600 p-2 rounded-full bg-opacity-50 border flex items-center space-x-1'><p>GET IN TOUCH</p> <FaArrowRight/> </button>
+            <Link to="/contact" className='bg-gray-600 p-2 rounded-full bg-opacity-50 border flex items-center space-x-1'><p>GET IN TOUCH</p> <FaArrowRight/> </Link>
         </div>
       </div>
     </div>
