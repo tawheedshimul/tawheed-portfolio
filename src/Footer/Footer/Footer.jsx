@@ -11,18 +11,18 @@ const Footer = () => {
   const location = useLocation();
 
   return (
-    <footer className="bg-gray-200 dark:bg-black py-4 border-t border-red-600">
+    <footer className="bg-gray-200 dark:bg-black py-4 border-t">
       <BacktoTop/>
       {/* div 1  */}
       <div className="container mx-auto flex px-2 justify-between items-center">
-        <Link to="/" style={{ color: location.pathname === '/' ? '#f00' : '#fff' }}>
-          <HiHome className="text-3xl" />
-        </Link>
         <Link to='/about' style={{ color: location.pathname === '/about' ? '#f00' : '#fff' }}>
           <SiAboutdotme className="text-3xl" />
         </Link>
         <Link to='/contact' style={{ color: location.pathname === '/contact' ? '#f00' : '#fff' }}>
           <FaBlenderPhone className="text-3xl" />
+        </Link>
+        <Link to="/" style={{ color: location.pathname === '/' ? '#f00' : '#fff' }}>
+          <HiHome className="text-3xl" />
         </Link>
         <Link to='/service' style={{ color: location.pathname === '/service' ? '#f00' : '#fff' }}>
           <MdConstruction className="text-3xl" />
