@@ -20,7 +20,7 @@ function ProjectCard() {
             <div className='container mx-auto flex justify-center'>
                 <div className='mt-4 flex overflow-x-auto gap-4 mb-4'>
                     {mern.map((item) => (
-                        <Link to={`/project/${item.id}`} key={item.id}> {/* Wrap the card in a Link */}
+                        <div key={item.id}>
                             <div className=' w-72 border  rounded overflow-hidden shadow-lg'>
                                 <img className='h-64 w-full' src={item.img} alt={item.title} />
                                 <div className='px-6 py-4 bg-black bg-opacity-70'>
@@ -30,12 +30,12 @@ function ProjectCard() {
                                     </p>
                                 </div>
                                 <div className='px-6 pt-4 pb-2'>
-                                    <span className='inline-block bg-gray-200 dark:bg-white rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
+                                    <Link to={`/project/${item.id}`} className='inline-block bg-gray-200 dark:bg-white rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
                                         See More...
-                                    </span>
+                                    </Link>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
             </div>
