@@ -10,7 +10,9 @@ const Banner = () => {
         <div className="text-[70px] hidden lg:block font-bold">WEB DEVELOPER</div>
         <div className="text-4xl font-bold lg:hidden">I'M PROFESSIONAL</div>
         <div className="text-4xl font-bold lg:hidden">WEB DEVELOPER</div>
-        <div className='lg:flex pt-10 justify-between items-center pe-2'>
+
+        {/* bottom div  */}
+        <div className='lg:flex pt-28 justify-between items-center pe-2'>
             <p>
                 I SPECIALIZE IN NEXT AND REACT JS. I'LL BUILD FOR YOU HIGH QUALITY WEBSITE.
             </p>
