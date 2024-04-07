@@ -7,6 +7,19 @@ import { MdConstruction } from "react-icons/md";
 import { FaProjectDiagram } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 
+const NavLink = ({ to, icon, location }) => {
+  const isActive = location.pathname === to;
+  const Icon = icon;
+
+  return (
+    <Link to={to} style={{ color: isActive ? '#fff' : '#808080' }}>
+      <div className={isActive ? 'animated-border' : ''}>
+        <Icon className="text-3xl" />
+      </div>
+    </Link>
+  );
+};
+
 const Footer = () => {
   const location = useLocation();
 
@@ -15,21 +28,11 @@ const Footer = () => {
       <BacktoTop/>
       {/* div 1  */}
       <div className="container mx-auto flex px-2 justify-between items-center">
-        <Link to='/about' style={{ color: location.pathname === '/about' ? '#f00' : '#fff' }}>
-          <SiAboutdotme className="text-3xl" />
-        </Link>
-        <Link to='/contact' style={{ color: location.pathname === '/contact' ? '#f00' : '#fff' }}>
-          <FaBlenderPhone className="text-3xl" />
-        </Link>
-        <Link to="/" style={{ color: location.pathname === '/' ? '#f00' : '#fff' }}>
-          <HiHome className="text-3xl" />
-        </Link>
-        <Link to='/service' style={{ color: location.pathname === '/service' ? '#f00' : '#fff' }}>
-          <MdConstruction className="text-3xl" />
-        </Link>
-        <Link to='/projects' style={{ color: location.pathname === '/projects' ? '#f00' : '#fff' }}>
-          <FaProjectDiagram className="text-3xl" />
-        </Link>
+        <NavLink to='/about' icon={SiAboutdotme} location={location} />
+        <NavLink to='/contact' icon={FaBlenderPhone} location={location} />
+        <NavLink to='/' icon={HiHome} location={location} />
+        <NavLink to='/service' icon={MdConstruction} location={location} />
+        <NavLink to='/projects' icon={FaProjectDiagram} location={location} />
       </div>
     </footer>
   );
