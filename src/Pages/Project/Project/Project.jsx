@@ -51,7 +51,7 @@ const projects = [
     imageUrl: 'https://via.placeholder.com/300',
     githubUrl: '#',
     liveDemoUrl: '#',
-  },{
+  }, {
     id: 3,
     title: 'Project 3',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis nunc vel risus convallis, nec eleifend quam consequat.',
@@ -78,9 +78,9 @@ const ProjectShowcase = () => {
 
   return (
     <div className=" h-[805px] mx-auto">
-      <h1 className="text-4xl -mt-[60px] pt-48 font-bold text-center h-72 bg-gray-800 bg-opacity-50 text-white" style={{backgroundImage: `url('https://i.ibb.co/yf3Vbdn/projectbanner.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-  <span className='border-b-2 p-2 px-7 rounded fixed top-16 left-1/2 -translate-x-1/2 bg-gray-900 bg-opacity-90'>Project Showcase</span>
-</h1>
+      <h1 className="text-4xl -mt-[60px] pt-48 font-bold text-center bg-fixed h-96 bg-gray-800 bg-opacity-50 text-white" style={{ backgroundImage: `url('https://i.ibb.co/yf3Vbdn/projectbanner.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <span className='border-b-2 p-2 px-7 rounded fixed top-16 left-1/2 -translate-x-1/2 bg-gray-900 bg-opacity-90'>Project Showcase</span>
+      </h1>
 
       <div className="flex px-2 overflow-x-auto gap-8">
         {projects.map((project) => (
@@ -108,6 +108,8 @@ const ProjectShowcase = () => {
           </div>
         </Modal>
       )}
+
+      <div className='h-24'></div>
     </div>
   );
 };
