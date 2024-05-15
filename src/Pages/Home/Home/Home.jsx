@@ -12,8 +12,11 @@ function Home() {
             <Banner/>
             {/* <Hero></Hero> */}
             {/* <CarouselComponent></CarouselComponent> */}
-            <ProjectCard></ProjectCard>
-            <Feauture></Feauture>
+            <ProjectCard/>
+            {/* <Feauture></Feauture> */}
+            <div className='h-24'>
+
+            </div>
         </div>
     )
 }

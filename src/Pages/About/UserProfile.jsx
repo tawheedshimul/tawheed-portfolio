@@ -25,15 +25,15 @@ function UserProfile() {
   return (
     <div className=" rounded-t-lg shadow-xl pb-8">
       <div className="w-full h-[250px]">
-        <img
-          src="https://i.ibb.co/dk2pbZK/823985479947.jpg"
+        {/* <img
+          // src="https://i.ibb.co/dk2pbZK/823985479947.jpg"
           className="w-full h-full rounded-tl-lg rounded-tr-lg"
           alt="Profile Background"
           onError={(e) => {
             e.target.src = 'fallback-image-url.jpg'; // Provide a fallback image
             e.target.onerror = null; // Remove the error handler to avoid infinite loops
           }}
-        />
+        /> */}
       </div>
       <div className="flex flex-col items-center -mt-20">
         <img

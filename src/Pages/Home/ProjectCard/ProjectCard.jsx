@@ -13,7 +13,7 @@ function ProjectCard() {
 
     return (
         <div className='bg-gray-800 p-3 text-white'>
-            <h2 className='text-center sticky top-16 text-gray-600 text-3xl bg-gray-200 p-4 rounded font-semibold'>
+            <h2 className='text-center text-gray-600 text-3xl bg-gray-200 p-4 rounded font-semibold'>
                 Knowledge
             </h2>
 
